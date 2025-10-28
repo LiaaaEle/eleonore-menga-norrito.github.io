@@ -30,7 +30,7 @@ This portfolio is classified by job, then type of documentation. To navigate, cl
 - Sole Technical Writer
 - Member of a cross-functional team (POs, QAs, Developers, Consultants)
 - Main responsabilities: Designing an online help portal, writing functional and business documentations for the online help
-## Online Help
+### Online Help
 **Context:**
 - Product name: CSR Insight
 - Product type: SaaS software that helps businesses manage sustainable development in a regulatory context
