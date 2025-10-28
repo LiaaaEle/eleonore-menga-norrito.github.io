@@ -1,5 +1,5 @@
 # Technical Writing Portfolio
-This portfolio is classified by job, then type of documentation. To navigate, click the **Bulleted list** button at the top right of this file.
+This portfolio is classified by job, then by type of documentation. To navigate, click the **Bulleted list** button at the top right of this file.
 
 ## Apprentice Technical Writer at Sage
 - Member of an Internatinonal Documentation and Translation Team
