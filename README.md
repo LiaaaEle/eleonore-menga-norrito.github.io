@@ -3,7 +3,7 @@ This portfolio is classified by job, then type of documentation. To navigate, cl
 
 ## Apprentice Technical Writer at Sage
 - Member of an Internatinonal Documentation and Translation Team
-- Main responsabilities: Documenting some features of the product for the online help
+- Main responsabilities: Writing functional documentations for the online help
 ### Online Help
 **Context:**
 - Product name: Sage Intacct Manufactoring (SIM)
