@@ -25,7 +25,16 @@ This portfolio is classified by job, then type of documentation. To navigate, cl
 
 **Documentation file (not a sample, but the entire page):**
 - Micro content (file: *Micro content (Confluence page).pdf*)
+### User Guide
+**Context:**
+- University project
+- Product name: Bookwalker Global Store
+- Product type: Ebook store and application for manga/light novel fans
+- Content type: User guide
+- Output type: PDF
 
+**Documentation file (not a sample, but the entire page):**
+- Bookwalker Global Store User Guide (file: *Bookwalker-User-Guide.pdf*)
 ## Lead Technical Writer at kShuttle
 - Sole Technical Writer
 - Member of a cross-functional team (POs, QAs, Developers, Consultants)
