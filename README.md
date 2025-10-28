@@ -1,18 +1,10 @@
 # Technical Writing Portfolio
-This portfolio is classified by job, then type of documentation.
+This portfolio is classified by job, then type of documentation. To navigate, click the **Bulleted list** button at the top right of the file.
 
-Jobs:
-- [Apprentice Technical Writer at Sage] (#apprentice-sage)
-- [Lead Technical Writer at kShuttle] (#lead-kshuttle)
-
-## Apprentice Technical Writer at Sage {#apprentice-sage}
+## Apprentice Technical Writer at Sage
 - Member of an Internatinonal Documentation and Translation Team
 - Main responsabilities: Documenting some features of the product for the online help
-
-Documentation types:
-- [Online Help] (#online-help)
-- [Confluence Documentation] (#confluence-doc)
-### Online Help {#online-help}
+### Online Help
 **Context:**
 - Product name: Sage Intacct Manufactoring (SIM)
 - Product type: SaaS ERP software
@@ -24,7 +16,7 @@ Documentation types:
 - Sequence Number (file: *SIM doc_Sequence number_screenshots.docx*)
 - Sequence Number Assignment (file: *SIM doc_Sequence number assignment_screenshots.docx*) 
 - Stock Change (file: *SIM doc_Stock change_screenshots.docx*)
-### Confluence Documentation {#confluence-doc}
+### Confluence Documentation
 **Context:**
 - Product name: MadCap Flare
 - Product type: Documentation software
@@ -34,14 +26,11 @@ Documentation types:
 **Documentation file (not a sample, but the entire page):**
 - Micro content (file: *Micro content (Confluence page).pdf*)
 
-## Lead Technical Writer at kShuttle {#lead-kshuttle}
+## Lead Technical Writer at kShuttle
 - Sole Technical Writer
 - Member of a cross-functional team (POs, QAs, Developers, Consultants)
 - Main responsabilities: Designing an online help portal, writing functional and business documentations for the online help
-
-Documentation types:
-- [Online Help] (#online-help)
-## Online Help {#online-help-2}
+## Online Help
 **Context:**
 - Product name: CSR Insight
 - Product type: SaaS software that helps businesses manage sustainable development in a regulatory context
