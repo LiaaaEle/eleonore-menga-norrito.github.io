@@ -1,5 +1,5 @@
 # Technical Writing Portfolio
-This portfolio is classified by job, then by type of documentation. To navigate, click the **Bulleted list** button at the top right of this file.
+This portfolio is classified by job, then by type of documentation. To navigate, click the ![Bulleted list](bulleted-list-button.png "Bulleted list") button at the top right of this file.
 
 ## Lead Technical Writer at kShuttle
 - Sole Technical Writer
@@ -14,7 +14,7 @@ This portfolio is classified by job, then by type of documentation. To navigate,
 
 **Access to the documentation samples:**
 1. Click the *DocCSR_Samples.zip* file in the repository.
-2. Click the ![Download raw file](download-raw-file-button.png "Download raw file") button to download the zip folder.
+2. Download the zip folder by clicking the ![Download raw file](download-raw-file-button.png "Download raw file") button at the top right of the file.
 3. Extract the zip folder.
 4. Click the *index.htm* file to display the CSR Insight Documentation Portal.
 5. To access the desired documentation samples from the left menu, read the below section.
