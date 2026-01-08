@@ -116,6 +116,8 @@ To resolve this issues, I changed the font type, improved spacing between paragr
 - Sequence Number (file: *SIM doc_Sequence number_screenshots.docx*)
 - Sequence Number Assignment (file: *SIM doc_Sequence number assignment_screenshots.docx*) 
 - Stock Change (file: *SIM doc_Stock change_screenshots.docx*)
+
+Download each file by clicking the ![Download raw file](download-raw-file-button.png "Download raw file") button at the top left of the file.
 ### Confluence Documentation
 **Context:**
 - Product name: MadCap Flare
@@ -125,6 +127,8 @@ To resolve this issues, I changed the font type, improved spacing between paragr
 
 **Documentation file (not a sample, but the entire page):**
 - Micro content (file: *Micro content (Confluence page).pdf*)
+
+Read the file directly on this repository or dowload it by clicking the ![Download raw file](download-raw-file-button.png "Download raw file") button at the top left of the file.
 ### User Guide
 **Context:**
 - University project
@@ -135,3 +139,5 @@ To resolve this issues, I changed the font type, improved spacing between paragr
 
 **Documentation file (not a sample, but the entire page):**
 - Bookwalker Global Store User Guide (file: *Bookwalker-User-Guide.pdf*)
+
+Read the file directly on this repository or dowload it by clicking the ![Download raw file](download-raw-file-button.png "Download raw file") button at the top left of the file.
