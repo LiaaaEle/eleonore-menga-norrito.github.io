@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>User Management</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <!--Need to replace Flare's button element with "<button type="button" class="copy-btn" MadCap:conditions="Default.ScreenOnly">Copy</button>"
+		in each code snippet when creating or after modifying. This is until Flare fix their button to copy without unicode fillers for spaces. Note that it has the condition ScreenOnly so that no button appears in the PDF (JB)-->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/Stylesheets/clipboard.css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.toggle-toc-on-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.toggle-toc-off-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Basic-HTML.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Resources/Scripts/clipboard.js">
+        </script>
+        <script type="text/javascript" defer="defer" src="../../Resources/Scripts/scroll-button.js">
+        </script>
+        <script type="text/javascript" src="../../../Skins/Default/Scripts/Topic-Toolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../general/homepage.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field: Enter your words in double quotation marks and use filter for refined results." placeholder="Enter your words in double quotation marks &quot; &quot; and use filter for refined results." />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All files" title="All files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie toggle-toc-on-button" title="Show left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Show left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie toggle-toc-off-button" title="Hide left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Hide left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie previous-topic-button" title="Previous documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Previous documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Next documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Next documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="topic-layout">
+                                        <div class="topicbody">
+                                            <!--This page was last updated on <MadCap:variable name="General.NewDateTimeVariable" />.-->
+                                            <div role="main" id="mc-main-content">
+                                                <h1 data-mc-conditions="Default.ScreenOnly" id="UserManagement" data-magellan-target="UserManagement"><a name="top"></a>User Management<img src="../../Resources/Images/version-icons/icon-csr-insight-2-13.png" title="This documentation is based on version 2.13 of CSR Insight application." alt="CSR Insight version 2.13" style="max-width: 37%;vertical-align: super;" /></h1>
+                                                <p data-mc-conditions="Default.ScreenOnly"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Fill In the Excel Template|../appendix/td-appendix-fill-excel-template.htm" target="_blank" style="mc-label: 'Related &quot;Appendices&quot; documentations';mc-help-control-display: popup;"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related "Appendices" documentations</span></a>
+                                                </p>
+                                                <div class="search-tip">
+                                                    <p data-mc-autonum="&lt;b&gt;SEARCH TIP &#160;&lt;/b&gt;"><span class="autonumber"><span><b>SEARCH TIP &#160;</b></span></span>Press <b>CTRL + F</b> (Windows and Linux) or <b>CMD + F</b> (Mac) to search within this page.</p>
+                                                </div>
+                                                <div class="intro">
+                                                    <p>To access this screen, click: <b>Administration</b>&#160;&gt;&#160;<b>User right management</b>&#160;&gt;&#160;<b>User management</b>.</p>
+                                                    <p>Click the <img src="../../Resources/Images/new-buttons-icons/home-button.png" title="Home button" alt="Home" style="max-width: 5%;vertical-align: middle;" /> button to return to the <a href="../../kcsr-quick-start/qs-home-screen-intro.htm">Home Screen</a>.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" /></a><a name="Security"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Security Notes</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Some actions, for example screen access, are allowed to authorized users, that is users with the right profile. In other words, if the user does not have the right profile, the user cannot perform the action.</p>
+                                                        <p>To set up this security (also called user rights):</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Define the profiles in the <a href="td-administration-user-rights-profile-management.htm">Profile Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Define users, and attach one or several profiles to them, in the <b>User Management</b> screen (this documentation).</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Assign user rights to the desired profiles in the <a href="td-administration-user-rights-matrix.htm">Profile Matrix</a> screen.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>You can view the actions of this screen that are attached to user rights, in the table below:</p>
+                                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Module</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Screen</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="8">
+                                                                        <p>User rights management</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="8">
+                                                                        <p>Users and profiles</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Screen access</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Create a user</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Edit a user</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Delete a user</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Manage user rights within their scope of entities</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Manage user rights across all scopes</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Import users</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                        <p>Export users</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <h2 id="Introduction" data-magellan-target="Introduction">Introduction</h2>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                    <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                <p style="font-weight: bold;">STEP BY STEP</p>
+                                                                <p>Defining users and attach profiles on this screen is the second step in setting up user rights in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application. </p>
+                                                                <p>Previous step is defining profiles on the <a href="td-administration-user-rights-profile-management.htm">Profile Management</a> screen.</p>
+                                                                <p>Next step is assigning user rights to profiles on the <a href="td-administration-user-rights-matrix.htm">Profile Matrix</a> screen.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>This screen allows you to create and view the different users of the application and their associated profiles. First, <a href="#Create">create</a> a user, then <a href="#Attach">attach</a> one or multiple profiles to this user.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>The <a href="#Descript">table</a> displays user information: logins, first names, names, emails, languages, login methodologies, last connection date, and the number of profiles.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>When attaching a profile to a user, restricted accesses defined for this profile are applied to the user. These accesses are then further restricted to only one entity and functional scope at the user level. </p>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>Depending on the restricted accesses applied, selectable items in the point of view (POV) on <b>Data Entry</b> and <b>Reporting</b> screens, such as campaign, entity, hierarchy, or indicator, are different.</p>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>Note that you can <a href="#Access">access</a> the content of a functional scope from this screen.</p>
+                                                <h2 id="DescriptionoftheTableColumns" data-magellan-target="DescriptionoftheTableColumns"><a name="Descript"></a>Description of the Table Columns</h2>
+                                                <p>The table contains the following columns:</p>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                    <thead>
+                                                        <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                            <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Column</th>
+                                                            <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Login</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Login used by the user to log in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application. </p>
+                                                                <p>No duplicates are allowed. Commonly called username.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>First name</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>First name of the user.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Name</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Last name of the user.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Email</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Email used by the user to log in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application. </p>
+                                                                <p>No duplicates are allowed.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Language</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Default language used by the user in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Login method</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Login method used by the user to log in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application:</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p><b>FusionAuth</b>, or</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><b>SSO</b>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Last connection date</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Date the user last logged into the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                <p>Number of profiles</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                <p>Number of profiles attached to the user.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2 id="CreateaUser" data-magellan-target="CreateaUser"><a name="Create"></a>Create a User</h2>
+                                                <p>To create a new user:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/add-button.png" title="Create button" alt="Create" class="icon" style="width: auto;max-width: 5%;" /> button at the top left of the table.</p>
+                                                        <p class="task-result">The <b>Create a user</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter the login, the first name, the name, the email, and the language.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Optional: Select the login methodology (SSO or Extern).</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="UpdateaUser" data-magellan-target="UpdateaUser">Update a User</h2>
+                                                <p>To update a user:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/edit-active-button.png" title="Update button" alt="Update" style="max-width: 5%;vertical-align: middle;" /> button at the beginning of the concerned line.</p>
+                                                        <p class="task-result">The <b>Update a user</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter the new information.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To edit the login and the email, you need to delete the user, then create a new one.</p>
+                                                <h2 id="DeleteaUser" data-magellan-target="DeleteaUser">Delete a User</h2>
+                                                <p>To delete a user:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/delete-button.png" title="Delete button" alt="Delete" style="max-width: 5%;vertical-align: middle;"></img> button at the beginning of the concerned line.</p>
+                                                        <p class="task-result">The <b>Delete this user</b> pop-up window appears to confirm the deletion.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>You cannot delete users associated with one or more profiles.</p>
+                                                <h2 id="AttachProfilestoaUser" data-magellan-target="AttachProfilestoaUser"><a name="Attach"></a>Attach Profiles to a User</h2>
+                                                <p>To access the different types of profiles for a user, click the <img src="../../Resources/Images/new-buttons-icons/zoom-button.png" title="See details button" alt="See details button" class="icon" style="width: auto;max-width: 5%;" /> button at the beginning of the concerned line.</p>
+                                                <p class="task-result">A pop-up panel appears at the bottom of the screen.</p>
+                                                <h3 id="AddaProfile" data-magellan-target="AddaProfile">Add a Profile</h3>
+                                                <p>To add a new profile for a user:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/add-button.png" title="Add button" alt="Add" class="icon" style="width: auto;max-width: 5%;" /> button at the top left of the table.</p>
+                                                        <p class="task-result">The <b>Add profile</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select the desired profile.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>If restricted access to entities or functional scopes is defined for the profile, on the <a href="td-administration-user-rights-profile-management.htm">Profile Management</a> screen, select the <b>Entity</b> and/or the <b>Scope</b> you want the user to access.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>You can only access active entities, as defined on the <a href="td-administration-indicator-management-uses.htm">Indicator Management</a> screen.<br /><br />If the profile can only access specific alternative hierarchies, only the entities included in those alternative hierarchies can be selected from the <b>Entity</b> drop-down menu.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Depending on the organization and functional scope the user has access to, the selectable items in the point of view (POV) through the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application, such as the campaign, the organization, or the indicator, are different.<br /><br />To learn more, consult the <a href="#Security">Security Notes</a>.</div>
+                                                <h3 id="UpdateaProfile" data-magellan-target="UpdateaProfile">Update a Profile</h3>
+                                                <p>To update a profile:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/edit-active-button.png" title="Update button" alt="Update" style="max-width: 5%;vertical-align: middle;" /> button at the beginning of the concerned line.</p>
+                                                        <p class="task-result">The <b>Update a profile</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select the desired new profile.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="DeleteaProfile" data-magellan-target="DeleteaProfile">Delete a Profile</h3>
+                                                <p>To delete a profile:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/delete-button.png" title="Delete button" alt="Delete" style="max-width: 5%;vertical-align: middle;" /> button at the beginning of the concerned line.</p>
+                                                        <p class="task-result">The <b>Delete this profile</b> pop-up window appears to confirm the deletion.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="AccessFunctionalScopeIndicators" data-magellan-target="AccessFunctionalScopeIndicators"><a name="Access"></a>Access Functional Scope Indicators </h3>
+                                                <p>When a profile is associated with a specific functional scope, you can access the indicator list for this functional scope. To do so:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click right on the <b>Scope</b> cell corresponding to the desired functional scope.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click the <b>See functional scope indicators</b> option from the drop-down menu.</p>
+                                                        <p class="task-result">The <a href="td-administration-user-rights-scope-indicators.htm">Scope Indicators</a> screen opens in a new tab.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 style="vertical-align: baseline;" id="CopytheProfilesfromOneUsertoOtherUsers" data-magellan-target="CopytheProfilesfromOneUsertoOtherUsers">Copy the Profiles from One User to Other Users</h2>
+                                                <p>To copy the profiles from one user to other users:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/duplicateToExisting-button.png" title="Copy button" alt="Copy" style="vertical-align: middle;max-width: 5%;" /> button.</p>
+                                                        <p class="task-result">The <b>Copy user rights</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select from the drop-down menus:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>The <b>Source user</b>: The user whose profile you want to copy</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>The <b>Target user(s)</b>: The users you want to paste the profile to</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="ImportorExportUsersorUserProfiles" data-magellan-target="ImportorExportUsersorUserProfiles"><a name="Import3"></a>Import or Export Users or User Profiles</h2>
+                                                <p>You can:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="#Import">Import or Export Users</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Import2">Import or Export User Profiles</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <h3 id="ImportorExportUsers" data-magellan-target="ImportorExportUsers"><a name="Import"></a>Import or Export Users</h3>
+                                                <p>To export users:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/export-excel-button.png" title="Export button" alt="Export" style="max-width: 5%;vertical-align: middle;" /> button at the top left of the screen.</p>
+                                                        <p class="task-result">The <b>Export users / user rights</b> pop-up window appears with a download link.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>Users</b> as <b>Export type</b>, then <b>OK</b>.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click the download link for the Excel file that appears.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>To import users:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Export the users as mentioned above.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Open the exported Excel file.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Fill in the Excel template, then save your data.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To help you fill in the Excel template, see the <a href="../appendix/td-appendix-fill-excel-template.htm">Fill In the Excel Template</a> appendix.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Back to the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application, click the <img src="../../Resources/Images/new-buttons-icons/import-database-button.png" title="Import button" alt="Import" style="max-width: 5%;vertical-align: middle;" /> button at the top left of the screen.</p>
+                                                        <p class="task-result">The <b>Import users / user rights</b> pop-up window appears.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Click <b>Import users</b> as <b>Import type</b>.</p>
+                                                    </li>
+                                                    <li value="6">
+                                                        <p>Choose a file.</p>
+                                                    </li>
+                                                    <li value="7">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="ImportorExportUserProfiles" data-magellan-target="ImportorExportUserProfiles"><a name="Import2"></a>Import or Export User Profiles</h3>
+                                                <p>To export user profiles:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/new-buttons-icons/export-excel-button.png" title="Export button" alt="Export" style="max-width: 5%;vertical-align: middle;"></img> button at the top left of the screen.</p>
+                                                        <p class="task-result">The <b>Export users / user rights</b> pop-up window appears with a download link.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>Access rights</b> as <b>Export type</b>, then <b>OK</b>.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click the download link for the Excel file that appears.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>To import user profiles:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Export the user profiles as mentioned above.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Open the exported Excel file.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Fill in the Excel template, then save your data.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To help you fill in the Excel template, see the <a href="../appendix/td-appendix-fill-excel-template.htm">Fill In the Excel Template</a> appendix.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Back to the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application, click the <img src="../../Resources/Images/new-buttons-icons/import-database-button.png" title="Import button" alt="Import" style="max-width: 5%;vertical-align: middle;" /> button at the top left of the screen.</p>
+                                                        <p>The <b>Import users / user rights</b> pop-up window appears.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Click <b>Import access rights</b> as <b>Import type</b>.</p>
+                                                    </li>
+                                                    <li value="6">
+                                                        <p>Choose a file.</p>
+                                                    </li>
+                                                    <li value="7">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu">
+                                            <div data-sticky-container="" id="mavAcEMY90qpdxAvKoeiqw">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="mavAcEMY90qpdxAvKoeiqw:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1280px)" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menu_proxy_skin mc-component">
+                                                        <li class="tree-node"><a href="#UserManagement">User Management</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#Introduction">Introduction</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#DescriptionoftheTableColumns">Description of the Table Columns</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#CreateaUser">Create a User</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#UpdateaUser">Update a User</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#DeleteaUser">Delete a User</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#AttachProfilestoaUser">Attach Profiles to a User</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#AddaProfile">Add a Profile</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#UpdateaProfile">Update a Profile</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#DeleteaProfile">Delete a Profile</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#AccessFunctionalScopeIndicators">Access Functional Scope Indicators </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#CopytheProfilesfromOneUsertoOtherUsers">Copy the Profiles from One User to Other Users</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ImportorExportUsersorUserProfiles">Import or Export Users or User Profiles</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#ImportorExportUsers">Import or Export Users</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#ImportorExportUserProfiles">Import or Export User Profiles</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="invisible"><a href="../../general/search-tips.htm" class="MCXref xref">Your search for  returned  result(s).</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Action Reports: Create and Attach an Action to a Strategy</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <!--Need to replace Flare's button element with "<button type="button" class="copy-btn" MadCap:conditions="Default.ScreenOnly">Copy</button>"
+		in each code snippet when creating or after modifying. This is until Flare fix their button to copy without unicode fillers for spaces. Note that it has the condition ScreenOnly so that no button appears in the PDF (JB)-->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/Stylesheets/clipboard.css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.toggle-toc-on-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.toggle-toc-off-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/basic-HTML-doc-set.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/Basic-HTML.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Resources/Scripts/clipboard.js">
+        </script>
+        <script type="text/javascript" defer="defer" src="../../Resources/Scripts/scroll-button.js">
+        </script>
+        <script type="text/javascript" src="../../../Skins/Default/Scripts/Topic-Toolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../general/homepage.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field: Enter your words in double quotation marks and use filter for refined results." placeholder="Enter your words in double quotation marks &quot; &quot; and use filter for refined results." />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All files" title="All files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie toggle-toc-on-button" title="Show left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Show left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie toggle-toc-off-button" title="Hide left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Hide left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie previous-topic-button" title="Previous documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Previous documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Next documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Next documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="topic-layout">
+                                        <div class="topicbody">
+                                            <!--This page was last updated on <MadCap:variable name="General.NewDateTimeVariable" />.-->
+                                            <div role="main" id="mc-main-content">
+                                                <h1 data-mc-conditions="Default.ScreenOnly" id="ActionReportsCreateandAttachanActiontoaStrategy" data-magellan-target="ActionReportsCreateandAttachanActiontoaStrategy"><a name="top"></a>Action Reports: Create and Attach an Action to a Strategy<img src="../../Resources/Images/version-icons/icon-csr-insight-2-13.png" title="This documentation is based on version 2.13 of CSR Insight application." alt="CSR Insight version 2.13" style="max-width: 37%;vertical-align: super;" /></h1>
+                                                <div class="search-tip">
+                                                    <p data-mc-autonum="&lt;b&gt;SEARCH TIP &#160;&lt;/b&gt;"><span class="autonumber"><span><b>SEARCH TIP &#160;</b></span></span>Press <b>CTRL + F</b> (Windows and Linux) or <b>CMD + F</b> (Mac) to search within this page.</p>
+                                                </div>
+                                                <div class="intro">
+                                                    <p>To access this screen, click: <b>Strategy</b>&#160;&gt;&#160;<b>My actions</b>&#160;&gt;&#160;<b>Action Reports</b>.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Security Notes</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Some actions, such as screen access, are permitted only for authorized users, that is, users with the appropriate profile. In other words, if the user does not have the right profile, the user cannot perform the action.</p>
+                                                        <p>To configure this security (also called user rights), complete the following steps:</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Define the profiles in the <a href="../administration/td-administration-user-rights-profile-management.htm">Profile Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Define users and attach one or more profiles to them in the <a href="../administration/td-administration-user-rights-user-management.htm">User Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Assign user rights to the desired profiles in the <a href="../administration/td-administration-user-rights-matrix.htm">Profile Matrix</a> screen.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>The table below contains screen actions that are related to user rights:</p>
+                                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Module</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Screen</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="19">
+                                                                        <p>My actions</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="19">
+                                                                        <p>Action reports</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Screen access</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validate the action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Refuse the action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Revise the year of the action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Update the progress of the action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Update the actuals of the action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Update the budget for the action.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p style="padding-top: 0px;">Add an action without validation</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Abort an action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Update action status</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Start an action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validate/reject a pending action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Update warnings for actions</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Update actions even after its status was updated</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Workflow - Validate action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Workflow - Unvalidate action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Workflow - Close action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Workflow - Unclose action</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                        <p>Create an unattached action without workflow/status</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="note" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span><span style="font-size: 1.1EM;">This documentation presents you the two main features of the </span><b style="font-size: 1.1EM;">Action Reports</b><span style="font-size: 1.1EM;"> screen:</span>
+                                                    <br />
+                                                    <ul>
+                                                        <li>
+                                                            <p><a href="#Create">Create a New Action</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="#Attach">Attach an Existing Action to a Strategy</a>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                    <br /><span style="font-size: 1.1EM;">For more information on this screen, see the following documentations:</span>
+                                                    <br />
+                                                    <ul>
+                                                        <li>
+                                                            <p><a href="td-strategy-action-reports-intro.htm">Action Reports: Introduction</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-strategy-action-reports-detailed-view-mode.htm">Action Reports: Detailed View Mode</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-strategy-action-reports-synthesis-view-mode.htm">Action Reports: Synthesis View Mode</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-strategy-action-reports-statuses-alerts.htm">Action Reports: Statuses and Alerts</a>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="space">&#160;</p>
+                                                <h2 id="Introduction" data-magellan-target="Introduction">Introduction</h2>
+                                                <p>This documentation presents you the two main features of the <b>Action Reports</b> screen:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="#Create">Create a New Action</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Attach">Attach an Existing Action to a Strategy</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <div class="note" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span><span style="font-size: 1.1EM;">For more information on this screen, see the following documentations:</span>
+                                                    <br />
+                                                    <ul>
+                                                        <li>
+                                                            <p><a href="td-strategy-action-reports-intro.htm">Action Reports: Introduction</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-strategy-action-reports-detailed-view-mode.htm">Action Reports: Detailed View Mode</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-strategy-action-reports-synthesis-view-mode.htm">Action Reports: Synthesis View Mode</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-strategy-action-reports-statuses-alerts.htm">Action Reports: Statuses and Alerts</a>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <h3 id="RecommendedWorkflow" data-magellan-target="RecommendedWorkflow">Recommended Workflow</h3>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Create strategies on the <a href="td-strategy-defining-management.htm">Strategy Management</a> screen.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Create stakes, targets level 1 and targets level 2 on the <a href="td-strategy-defining-deployment.htm">Strategy Deployment</a> screen.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Create actions on the <a href="td-strategy-defining-deployment.htm">Strategy Deployment</a> screen or on this screen.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Configure indicator tracking:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Bind quantitative indicators to stakes, targets, and/or actions for progress tracking.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Optional: Bind financial indicators to actions for OPEX and CAPEX tracking.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Enter quantitative target values on the <a href="td-strategy-actions-indicator-tracking.htm">Indicator Tracking</a> screen.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="CreateanAction" data-magellan-target="CreateanAction"><a name="Create"></a>Create an Action</h2>
+                                                <p>Authorized users can create an action in three ways:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="#Create2">Create and Attach an Action to a Strategy and a Target</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Create3">Create a Non-Attached Action</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Create4">Create an Action from the Library of Initiatives</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <h3 id="BeforeCreatinganAction" data-magellan-target="BeforeCreatinganAction">Before Creating an Action</h3>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p><b>Plan your hierarchy:</b> Define all stakes, targets, and actions before starting.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p><b>Verify date ranges:</b> Ensure child date ranges fit within parent ranges.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p><b>Confirm entity access:</b> Check that you have rights to all necessary entities.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p><b>Prepare indicators:</b> Identify which indicators you will bind to actions.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="CreateandAttachanActiontoaStrategyandaTarget" data-magellan-target="CreateandAttachanActiontoaStrategyandaTarget"><a name="Create2"></a>Create and Attach an Action to a Strategy and a Target</h3>
+                                                <p>To create an action that is attached to a strategy and a target selected in the POV:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click <b>Create action</b>, then <b>For this target</b>.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/td-strategy-actions-13.png" style="width: auto;height: auto;max-width: 35%;" title="Create action drop-down menu" alt="Create action drop-down menu" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Create action</b> drop-down menu</p>
+                                                        </div>
+                                                        <p class="space" style="font-size: 0.3em;" data-mc-conditions="Default.ScreenOnly">&#160;</p>
+                                                        <p class="task-result">The <b>Create new action</b> pop-up panel appears in full screen.</p>
+                                                        <p class="space" style="font-size: 0.3em;" data-mc-conditions="Default.ScreenOnly">&#160;</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Fill out the  <a href="#Identifi">Identification</a> and <a href="#Deployme">Deployment</a> tabs.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Optional: Fill out the <a href="#Follow-U">Follow-up</a> and <a href="#ESRS">ESRS link</a> tabs.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>You can always go back to the main screen and fill out optional tabs later. To do so, click the <img src="../../Resources/Images/buttons-icons/back-button.png" title="Back button" alt="Back" style="max-width: 5%;vertical-align: middle;" /> button at the top left of the pop-up panel.</p>
+                                                <h4>Navigation Between Tabs</h4>
+                                                <p>Button labels change based on the current tab:</p>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/basic-HTML-doc-set.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                    <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                    <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                            <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Tab</th>
+                                                            <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Button Displayed</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Identification</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Save</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Deployment</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Deploy</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Follow-up</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Save and continue</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                <p>ESRS link</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                <p>Save</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>You can also use the <b>Previous</b> button or click tab names directly after saving initial data.</p>
+                                                <h4><a name="Identifi"></a>Identification Tab</h4>
+                                                <p>The first step in creating an action is to provide identification items.</p>
+                                                <p>Below are two tables, the first one providing you mandatory fields, the second one the optional fields:</p>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');margin-left: auto;margin-right: auto;caption-side: top;" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                    <caption style="font-size: 13pt;">Mandatory Fields</caption>
+                                                    <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                    <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                            <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Field</th>
+                                                            <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Label</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Action label in all available languages.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Start date</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Start date of the action. </p>
+                                                                <p>Must be lower than end date and within the time frame of the strategy and the higher deployment levels.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>End date</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>End date of the action. </p>
+                                                                <p>Must be higher than start date and within the time frame of the strategy and the higher deployment levels.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Periodicity</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Data collection frequency of the action:</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p><b>Yearly</b>: Once per year (<b>Full year</b>)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><b>Semiannually</b>: Twice per year (<b>HY1</b>: first semester, <b>HY2</b>: second semester)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><b>Quarterly</b>: Four times per year (<b>Q1</b>, <b>Q2</b>, <b>Q3</b>, <b>Q4</b>)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><b>Monthly</b>: Twelve times per year (<b>January</b> through <b>December</b>)</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                <p>Theme</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                <p>Action theme.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');margin-left: auto;margin-right: auto;caption-side: top;" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                    <caption style="font-size: 13pt;">Optional Fields</caption>
+                                                    <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                    <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                            <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Field</th>
+                                                            <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Icon</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>To add an icon to an action:</p>
+                                                                <ol>
+                                                                    <li value="1">
+                                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/icon-button.png" title="Icon button" alt="Icon" style="vertical-align: middle;max-width: 8%;" /> button next to the <b>Label</b> field.</p>
+                                                                    </li>
+                                                                    <li value="2">
+                                                                        <p>Select an icon from the drop-down menu.</p>
+                                                                    </li>
+                                                                </ol>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Person in charge</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>User responsible for the action.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Description</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Action description.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Private action</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>When the action is private, you cannot create a new initiative based on this action.</p>
+                                                                <p>To set the action as private, check the <b>Private action</b> box.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                <p>Attachments</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                <p>To add an attachment, drag and drop or click the <b>Attachments</b> zone.</p>
+                                                                <p class="space">&#160;</p>
+                                                                <div class="note-table" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span><b>Attachment limitations:</b>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p>Maximum 10 documents per deployment level</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>Supported file types: Excel, PowerPoint, Word, images (PNG, JPEG, and so on)</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>Maximum file size: Determined by system configuration</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <p class="space">&#160;</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>To access the <b>Deployment</b> tab, click the <b>Save</b> button.</p>
+                                                <h4><a name="Deployme"></a>Deployment Tab</h4>
+                                                <p>The second step in creating an action is to deploy the action on entities. To do so:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Select the <b>Deployment Mode</b>:</p>
+                                                        <ul>
+                                                            <li style="margin:1.12em 0;">
+                                                                <p><b>Default</b>: Only one entity is selected or deselected on click.</p>
+                                                            </li>
+                                                            <li style="margin:1.12em 0;">
+                                                                <p><b>The entity and its children</b>: The entity and its direct child entities (N-1 level) are selected or deselected on click.</p>
+                                                            </li>
+                                                            <li style="margin:1.12em 0;">
+                                                                <p><b>The entity and its descendants</b>: The entity and all its child entities are selected or deselected on click.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Check the desired boxes to select one or multiple entities.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To access the <b>Follow-up</b> tab, click the <b>Deploy</b> button at the bottom right of the <b>Deployment</b> tab.</p>
+                                                <h4><a name="Follow-U"></a>Follow-Up Tab</h4>
+                                                <p>The third step in creating an action is to fill out information on quantitative, financial, and/or human resources follow-up:</p>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                    <thead>
+                                                        <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                            <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Block</th>
+                                                            <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Quantitative follow-up</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>By linking an action to an indicator for quantitative follow-up, you can retrieve its values and then track its progress over time.</p>
+                                                                <p class="note-table" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>An indicator linked to a deployment level is called a quantitative target in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application. For more information, see <a href="td-strategy-actions-indicator-tracking.htm">Indicator Tracking</a>.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Financial follow-up</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>By linking an action to an indicator for OPEX or CAPEX follow-up, you can retrieve its values as OPEX or CAPEX actuals, and then track its progress over time.</p>
+                                                                <p>You can also allocate an OPEX or CAPEX budget to an action on the <a href="td-strategy-defining-budget-definition.htm">Budget Definition</a> screen.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                <p>Human resources follow-up</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                <p>Allocate FTE / staffing to an action.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>To fill out information on quantitative follow-up:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <b>Bind to an indicator</b> button from the <b>Quantitative follow-up</b> block.</p>
+                                                        <p class="task-result">The <b>Choose indicator</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select the following items from the drop-down menus:</p>
+                                                        <ul>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>Chapter</b>
+                                                                </p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>Theme</b>
+                                                                </p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>Section</b>
+                                                                </p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>Indicator</b>
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                        <p class="task-result">Quantitative target information is automatically displayed, that is:</p>
+                                                        <ul>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p class="task-result"><b>Absolute value</b>
+                                                                </p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p class="task-result"><b>Percentage</b>
+                                                                </p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p class="task-result"><b>Target year</b>
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Select the <b>Input mode</b> from the drop-down menu that appears:</p>
+                                                        <ul>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>Bottom up</b>: Quantitative target values of parent entities are automatically consolidated by aggregation of the quantitative target values of the child entities.</p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>Top down</b>: Quantitative target values of parent entities are consolidated using a distribution mode. Quantitative target values of child entities are consolidated by recalculation.</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p class="task-result">The indicator label and unit appear in chips at the top of the action card.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/indicator-tracking-button.png" title="Indicator tracking button" alt="Indicator tracking" style="max-width: 5%;vertical-align: middle;" /> button to enter, consolidate and distribute quantitative target values across the entities and on the temporal axis through the <a href="td-strategy-actions-indicator-tracking.htm">Indicator Tracking</a> screen.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To fill out information on financial follow-up:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/indicator-tracking-button.png" title="Budget definition button" alt="Budget definition" style="max-width: 5%;vertical-align: middle;" /> button to define an OPEX or CAPEX budget.</p>
+                                                        <p class="task-result">The <a href="td-strategy-defining-budget-definition.htm">Budget Definition</a> screen appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Optional: Retrieve OPEX or CAPEX actuals from the values of an indicator:</p>
+                                                        <ol>
+                                                            <li style="margin: 1.12em 0;" value="1">
+                                                                <p>Click the <b>Bind to an indicator</b> button from the <b>Financial follow-up</b> block.</p>
+                                                                <p class="task-result" style="margin: 1.12em 0;">The <b>Choose indicator</b> pop-up panel appears.</p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;" value="2">
+                                                                <p>Select the following items from the drop-down menus:</p>
+                                                                <ul>
+                                                                    <li style="margin: 1.12em 0;">
+                                                                        <p><b>Chapter</b>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li style="margin: 1.12em 0;">
+                                                                        <p><b>Theme</b>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li style="margin: 1.12em 0;">
+                                                                        <p><b>Section</b>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li style="margin: 1.12em 0;">
+                                                                        <p><b>Indicator</b>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ol>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>You can manually enter OPEX or CAPEX actuals instead of retrieving them from an indicator. Read <a href="td-strategy-action-reports-detailed-view-mode.htm#View8" class="MCXref xref">View or Enter OPEX and CAPEX Actuals</a>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To fill out information on human resources follow-up, enter the number of FTE / staffing you want to allocate to the action from the <b>Human resources follow-up</b> block.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To access the <b>ESRS link</b> tab, click the <b>Save and continue</b> button at the bottom right of the <b>Follow up</b> tab.</p>
+                                                <h4><a name="ESRS"></a>ESRS Link Tab</h4>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>This tab is related to the <b>CSRD</b> module. For more information, see <a href="../../kcsr-quick-start/qs-csrd.htm">Corporate Sustainability Reporting Directive (CSRD)</a>.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a style="font-size: 1.1em;" href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Inheritance of ESRS links</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>After creation, a target or action automatically inherits the ESRS links and responses to MDRs from higher deployment levels.</p>
+                                                        <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                        <p>When a stake or target is updated, ESRS links and responses to MDRs are propagated by overwriting the values of the associated targets and/or actions.</p>
+                                                        <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                        <p>You can manually edit inherited information for an action. This change does not affect the associated target or other actions.</p>
+                                                        <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                        <p>You can also manually copy one or all responses to MDRs on associated targets and actions:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>To copy the response to an MDR, click on the <img src="../../Resources/Images/buttons-icons/copy-response-button.png" title="Copy response button" alt="Copy response" style="vertical-align: middle;max-width: 4%;" /> button corresponding to the desired MDR. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>To copy all the responses to the MDRs, click on the <img src="../../Resources/Images/buttons-icons/copy-responses-button.png" title="Copy responses button" alt="Copy responses" style="vertical-align: middle;max-width: 20%;" /> button.</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                        <p>An <img src="../../Resources/Images/buttons-icons/info-icon.png" title="Information icon" alt="Information" style="max-width: 5%;vertical-align: baseline;" /> icon appears for each inherited response.</p>
+                                                    </div>
+                                                </div>
+                                                <p>The fourth and last step in creating an action is to link the action to the ESRS to which it contributes and enter responses to MDRs.</p>
+                                                <p>To do so:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Check one or multiple boxes to select ESRS to which the action contributes.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Fill out the fields that allow text entry for each MDR category, as desired:</p>
+                                                        <ul>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>MDR Policies</b>
+                                                                </p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>MDR Action</b>
+                                                                </p>
+                                                            </li>
+                                                            <li style="margin: 1.12em 0;">
+                                                                <p><b>MDR Target</b>
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                        <p class="space">&#160;</p>
+                                                        <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>There are three types of fields:<br /><ul><li style="margin: 1.12em 0;">Qualitative fields: You can enter rich text (bold, italic, etc.).</li><li style="margin: 1.12em 0;">Normal fields: You can enter plain text.</li><li style="margin: 1.12em 0;">Automated fields: Fields that are automatically populated when the expected data exists.</li></ul></div>
+                                                        <p class="space">&#160;</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>Save</b>.</p>
+                                                        <p class="task-result">A link is automatically created between the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> item and the corresponding data points and data parts on the <a href="../reporting/td-reporting-regulatory-reports-intro.htm">Generation of Regulatory Reports</a> screen, except if they are already linked to another item type.</p>
+                                                        <p class="task-result">This type of link is called <b>Strategy</b>.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Optional, but recommended: Edit or enter new responses through the <a href="../reporting/td-reporting-regulatory-MDRs.htm">Summary of Contributions to MDRs</a> screen.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>You have finished filling out all tabs.</p>
+                                                <h3 id="CreateaNonAttachedAction" data-magellan-target="CreateaNonAttachedAction"><a name="Create3"></a>Create a Non-Attached Action</h3>
+                                                <p>To create an action that is not attached to a strategy and a target:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click <b>Create action</b>, then <b>Without strategy</b>.</p>
+                                                        <p class="task-result">The <b>Create new action</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Follow the same steps as in the <a href="#Create2">Create and Attach an Action to a Strategy and a Target</a> section above (except the first step).</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Authorized users can create non-attached actions without workflow and status. To do so, check the <b>Action without workflow and status</b> box when filling out the <b>Identification</b> tab.</p>
+                                                <h3 id="CreateanActionfromtheLibraryofInitiatives" data-magellan-target="CreateanActionfromtheLibraryofInitiatives"><a name="Create4"></a>Create an Action from the Library of Initiatives</h3>
+                                                <p>To create an action from the <a href="td-strategy-monitoring-library-initiatives.htm">Library of Initiatives</a>:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click <b>Create action</b>, then <b>From library</b>.</p>
+                                                        <p class="task-result">The <b>Associate action</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Optional: Search for the initiative with which you want to create an action by typing at least three letters in the search box, and/or using the <b>Duration</b>, <b>Indicator</b>, and <b>Theme</b> filters.</p>
+                                                        <p class="task-result">As you type, or after selecting a filter, the initiatives list changes.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Select the check box of the initiative with which you want to create an action.</p>
+                                                        <p class="task-result">A new <b>Associate action</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Select the <b>Strategy</b>, the <b>Stake</b>, the <b>Target level 1</b> and the <b>Target level 2</b>, from the drop-down menus.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Click <b>OK</b>.</p>
+                                                        <p class="task-result">The <b>Create new action</b> pop-up panel appears with the initiative information filled in.</p>
+                                                    </li>
+                                                    <li value="6">
+                                                        <p>Fill out other required information, and optional information if desired, as explained in the <a href="#Create2">Create and Attach an Action to a Strategy and a Target</a> section above.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To manage the initiatives, see <a href="td-strategy-monitoring-library-initiatives.htm">Library of Initiatives</a>.</p>
+                                                <h3 id="AfterCreatinganAction" data-magellan-target="AfterCreatinganAction">After Creating an Action</h3>
+                                                <p>You have successfully created an action. The next steps depend on the type and purpose of the action you created:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p><strong>For quantitative targets (stakes, targets, or actions bound to indicators):</strong>
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Enter quantitative target values on the <a href="td-strategy-actions-indicator-tracking.htm">Indicator Tracking</a> screen.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Monitor progress on the <a href="td-strategy-monitoring-target-synthesis.htm">Quantitative Target Synthesis</a> screen.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p><strong>For actions with financial tracking:</strong>
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Define budgets on the <a href="td-strategy-defining-budget-definition.htm">Budget Definition</a> screen.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Track actuals through this screen. See <a href="td-strategy-action-reports-detailed-view-mode.htm#Track3" class="MCXref xref">Track the OPEX and CAPEX Progress</a>.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p><strong>For ESRS-linked items:</strong>
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Review summaries on the <a href="#">Summary of Contributions to MDRs</a> screen.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="AttachanExistingActiontoaStrategy" data-magellan-target="AttachanExistingActiontoaStrategy"><a name="Attach"></a>Attach an Existing Action to a Strategy</h2>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>This feature is available only for existing actions not attached to a strategy in the detailed view mode.</p>
+                                                <p>To attach an action to a strategy:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Select the detailed view mode with the <img src="../../Resources/Images/buttons-icons/action-view-modes-switch.png" title="Action view modes switch button" alt="Action view modes" style="max-width: 20%;vertical-align: text-bottom;" /> switch button.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select the action you want to attach to a strategy in the action list.</p>
+                                                        <p class="task-result">An action card appears.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button-2.png" style="max-width: 5%;vertical-align: top;" title="Three dots button" alt="Three dots" /> button, then <b>Attach an action to a strategy</b>.</p>
+                                                        <p class="task-result">The <b>Associate action</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Select the <b>Strategy</b>, the <b>Stake</b>, the <b>Target level 1</b> and the <b>Target level 2</b>, from the drop-down menus.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Click <b>OK</b>.</p>
+                                                        <p class="task-result">The <img src="../../Resources/Images/buttons-icons/strategy-icon.png" style="vertical-align: middle;max-width: 3%;" title="Strategy icon" alt="Strategy" /> icon appears below the action label.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="EditanAction" data-magellan-target="EditanAction">Edit an Action</h2>
+                                                <p>To resume filling out the other tabs:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Select your action from the action list.</p>
+                                                        <p class="task-result">An action card appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button-2.png" style="max-width: 5%;vertical-align: top;" title="Three dots button" alt="Three dots" /> button at the top right of the action card.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>Show details</b>.</p>
+                                                        <p class="task-result">The <b>Edit action</b> pop-up panel appears in full screen.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span><b>Update restrictions</b>:<br /><ul><li style="margin-top: 1.12em; margin-bottom: 1.12em;"><b>Identification</b> and <b>Deployment</b> tabs: Editable only for non-approved actions without any data and whose periodicity matches that selected in the POV</li><li><b>Exception</b>: Action labels and descriptions are always editable.</li></ul></p>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu">
+                                            <div data-sticky-container="" id="HJ6pCRM4E0W4oH7WfOqHhg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="HJ6pCRM4E0W4oH7WfOqHhg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1280px)" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menu_proxy_skin mc-component">
+                                                        <li class="tree-node"><a href="#ActionReportsCreateandAttachanActiontoaStrategy">Action Reports: Create and Attach an Action to a Strategy</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#Introduction">Introduction</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#RecommendedWorkflow">Recommended Workflow</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#CreateanAction">Create an Action</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#BeforeCreatinganAction">Before Creating an Action</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#CreateandAttachanActiontoaStrategyandaTarget">Create and Attach an Action to a Strategy and a Target</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#CreateaNonAttachedAction">Create a Non-Attached Action</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#CreateanActionfromtheLibraryofInitiatives">Create an Action from the Library of Initiatives</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#AfterCreatinganAction">After Creating an Action</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#AttachanExistingActiontoaStrategy">Attach an Existing Action to a Strategy</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#EditanAction">Edit an Action</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="invisible"><a href="../../general/search-tips.htm" class="MCXref xref">Your search for  returned  result(s).</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

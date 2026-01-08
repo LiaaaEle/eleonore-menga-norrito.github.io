@@ -1,0 +1,1648 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+body
+{
+	font-family: 'Segoe UI';
+	font-size: 11pt;
+}
+
+html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	
+}
+
+html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+}
+
+html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/*Customizes the topic layout*/
+
+div.topic-layout
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 50px;
+}
+
+/*Sets width of the column containing the content of the topic*/
+
+div.topicbody
+{
+	width: 56%;
+}
+
+/*Sets width of the column containing the "On this page" box*/
+
+div.side-menu
+{
+	width: 44%;
+	max-width: 430px;
+}
+
+/*Customzies the "On this page" box*/
+/* Adds the "On this page" string in the box*/
+
+ul.menu._Skins_menu_proxy_skin.mc-component::before
+{
+	content: "On this page";
+	display: block;
+	font-size: 1.4em;
+	color: #e75014;
+	font-family: 'Segoe UI';
+	margin-bottom: 10px;
+}
+
+/*Adds Shuttle icons before links*/
+
+a:active
+{
+	color: #a82384;
+}
+
+div.side-menu a::before
+{
+	content: url('../Images/buttons-icons/bullet-point-logo-kshuttle.svg');
+	margin-right: 10px;
+	color: #e75014;
+	font-family: 'Segoe UI Light';
+}
+
+/* Customizes the headings */
+
+h1,
+h2,
+h3,
+h4
+{
+	color: #e75014;
+	font-family: 'Segoe UI';
+}
+
+h1
+{
+	font-weight: bold;
+	font-size: 2em;
+	mc-heading-level: 1;
+}
+
+h2
+{
+	font-size: 1.6em;
+	font-weight: bold;
+	padding-top: 1em;
+	mc-heading-level: 2;
+}
+
+h3
+{
+	padding-top: 1em;
+	mc-heading-level: 3;
+	font-size: 1.3em;
+}
+
+h4
+{
+	mc-heading-level: 4;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+/* Customizes the "What's New" heading on the hompage */
+
+h2.homepage
+{
+	color: #1C2541;
+	padding-top: 0em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20pt;
+	margin: .10em 0;
+	margin-top: .10em;
+}
+
+/* Styles paragraphs */
+
+p
+{
+	font-size: 1.1em;
+	font-family: 'Segoe UI';
+	mc-hyphenate: never;
+}
+
+p.task-result
+{
+	font-style: italic;
+}
+
+/* Styles lists */
+
+ol,
+ul
+{
+	letter-spacing: .25;
+	line-height: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+ul
+{
+	list-style-image: url('../Images/buttons-icons/bullet-point-logo-kshuttle.svg');
+}
+
+ol li ol li p,
+ol li ul li p,
+ul li ul li p,
+ul li ol li p
+{
+	padding: 0;
+	margin: 0;
+}
+
+/* Defines a max width for images */
+
+img
+{
+	border: none;
+	max-width: 100%;
+}
+
+/* Add a caption to images */
+
+div.caption
+{
+	background-color: #eeeeee;
+	margin: 10px;
+	border: solid 1px #cccccc;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+/* Makes images appear as thumbnails*/
+
+img.Large-Image-Web
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+	mc-thumbnail-max-width: 100%;
+	border: 2px solid #e75014;
+	padding: 10px;
+}
+
+/* Freeze table header */
+
+div.table
+{
+	max-height: 70vh;
+	overflow: auto;
+}
+
+/* Styles dropdowns*/
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: none;
+	font-size: 1.6em;
+	color: #e75014;
+	font: Segoe UI;
+}
+
+MadCap|dropDownBody
+{
+	padding: 10px 30px 0;
+}
+
+MadCap|dropDown
+{
+	mc-image-position: left;
+	mc-image-spacing: 10px;
+	padding: 10px 0;
+	mc-open-image: url('../Images/homepage/minus.png');
+	border-bottom-color: #fafafa;
+	border-bottom: solid 1px #dadada;
+	mc-closed-image: url('../Images/homepage/plus.png');
+}
+
+/* Customizes classes for dropdowns that act like titles or paragraphs  */
+
+MadCap|dropDownHotspot.title
+{
+	color: #e75014;
+	font-family: 'Segoe UI';
+	font-size: 1.8em;
+}
+
+MadCap|dropDownHotspot.subtitle
+{
+	color: #e75014;
+	font-family: 'Segoe UI';
+	font-size: 1.1em;
+}
+
+MadCap|dropDownHotspot.body
+{
+	color: #1C2541;
+	font-family: 'Segoe UI';
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-left: 1.5em;
+}
+
+/* Styles cross references */
+
+MadCap|xref
+{
+	color: #076685;
+	mc-format: '{para}';
+	text-decoration: underline;
+}
+
+/* Cutomizes the different links */
+
+a:link,
+a:visited,
+a:hover
+{
+	color: #076685;
+}
+
+a.noline,
+p.homepage
+{
+	font-family: 'Segoe UI';
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+a.home-button
+{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	width: 100%;
+}
+
+/*IDK*/
+
+div.home-layout
+{
+	flex-grow: 1;
+	padding: 0.5% 5%;
+}
+
+div.home-section
+{
+	padding: 5% 0;
+	border-bottom: solid 1px #dadada;
+}
+
+div.whatsnew
+{
+	display: flex;
+	flex-direction: row;
+}
+
+/* Removes the border on the last section of the home page */
+
+div.home-section:last-of-type
+{
+	border-bottom: none;
+}
+
+/* Styles the breadcrumb proxy */
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: #888888;
+}
+
+/* Styles the div containing the breadcrumb */
+
+div.nocontent
+{
+	margin-left: 50px;
+}
+
+/* Customizes the 'Welcome to the Internal Shuttle Documentation Portal' div */
+
+div.topic-hero
+{
+	padding: 0.2em;
+}
+
+div.topic-hero h1
+{
+	color: #e75014;
+	text-align: center;
+	font-size: 3.2em;
+	border-bottom: none;
+}
+
+/* Customizes the homepage of the project */
+
+div.container
+{
+	content: ' ';
+	flex-direction: row;
+}
+
+div.col
+{
+	content: ' ';
+	float: left;
+	flex-grow: 1;
+	padding: 0em 1.2em 1.2em 0em;
+}
+
+/* Creates the 'grid' containing the links and icons of the hompage */
+
+div.col-component
+{
+	float: left;
+	text-align: center;
+	flex-grow: 1;
+}
+
+div.col-component:hover
+{
+	background-color: #E9ECEF;
+}
+
+/* Customizes the effects when hovering or clicking an icon */
+
+a.productLogo > img
+{
+	transition: all .2s ease-in-out;
+}
+
+a.productLogo > img:hover
+{
+	transform: scale(1.1);
+}
+
+/* Customizes the headers on the Homepage */
+
+div.component-header
+{
+	text-align: center;
+	background-color: #E9ECEF;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+/* Container of the col-component element */
+
+div.row
+{
+	display: flex;
+	padding: 0.5em;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #b9bec1;
+	padding: 2%;
+	height: 250px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	height: 200px;
+	width: 100%;
+	margin-left: 0%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	height: 200px;
+	width: 100%;
+	margin-left: 8.3333%;
+}
+
+div.article-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.article-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.article-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.article-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #dadada;
+}
+
+div.article-tiles > div:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.8s cubic-bezier(.25,.8,.25,1);
+}
+
+div.article-tiles > div:nth-child(1)
+{
+	width: 18%;
+	margin-left: 0%;
+}
+
+div.article-tiles > div:nth-child(2)
+{
+	width: 18%;
+	margin-left: 2%;
+}
+
+div.article-tiles > div:nth-child(3)
+{
+	width: 18%;
+	margin-left: 2%;
+}
+
+div.article-tiles > div:nth-child(4)
+{
+	width: 18%;
+	margin-left: 2%;
+}
+
+div.article-tiles > div:nth-child(5)
+{
+	width: 18%;
+	margin-left: 2%;
+}
+
+div.article-tiles img
+{
+	max-width: 90%;
+}
+
+div.footer.center
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-top: solid 1px #fafafa;
+	background-color: #e9ecef;
+}
+
+div.home-footer	/* Controls the look of the footer in the Home master page. */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-footer > div
+{
+	/*float: left;*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-footer > div:nth-child(1)
+{
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-footer > div:nth-child(2)
+{
+	width: 65%;
+	margin-left: 0%;
+}
+
+div.intro
+{
+	background-color: #fafafa;
+	padding: 0.5em;
+	border: solid 1px #E9ECEF;
+	margin-bottom: 1em;
+}
+
+div.tips
+{
+	background-color: #f4f7f7;
+	padding: 0.5em;
+	mc-auto-number-format: '{b}WORKAROUND {/b}';
+	line-height: 18px;
+	overflow: hidden;
+	border-left: solid 10px #32CD32;
+	margin-bottom: 1em;
+}
+
+p.footer-sub
+{
+	color: #fff;
+	font-family: Segoe UI;
+	font-size: 1.2em;
+}
+
+.footer
+{
+	padding: 25px 25px 10px 25px;
+}
+
+.footer-logo
+{
+	max-width: 100%;
+	margin: 0;
+	text-align: left;
+}
+
+.footer-links a
+{
+	padding: 2em;
+}
+
+.footer-icons
+{
+	text-align: right;
+}
+
+div.footer-icons a
+{
+	padding: 0.2em;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	height: 200px;
+	width: 15%;
+	margin-left: 5%;
+}
+
+/* Customizes the Mini TOC proxy */
+
+MadCap|miniTocProxy
+{
+	font-family: 'Segoe UI Light';
+	padding-top: 0em;
+	font-size: 1em;
+	color: #076685;
+	list-style: url('../Images/buttons-icons/bullet-point-logo-kshuttle.svg');
+	margin-left: 40px;
+	display: block;
+	border: none 0px transparent;
+}
+
+p.MiniTOC1
+{
+	padding: 0em;
+	color: #076685;
+	font-size: 1em;
+	font-weight: normal;
+	display: list-item;
+	margin: 0;
+}
+
+p.MiniTOC2
+{
+	color: #076685;
+	font-size: 1em;
+	display: list-item;
+	list-style: url('../Images/buttons-icons/bullet-point-logo-kshuttle.svg');
+}
+
+p.MiniTOC3
+{
+	color: #076685;
+	font-size: 1em;
+	list-style: url('../Images/buttons-icons/bullet-point-logo-kshuttle.svg');
+	display: list-item;
+}
+
+MadCap|menuProxy
+{
+	display: list-item;
+	list-style: square;
+}
+
+MadCap|codeSnippetBody
+{
+	background-color: #f5f2f0;
+	padding-bottom: 0;
+	padding: 0;
+	padding-top: 0;
+	line-height: normal;
+	letter-spacing: 0px;
+	font-size: 11pt;
+	font-family: monospace;
+}
+
+caption
+{
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-family: 'Segoe UI Semibold';
+}
+
+MadCap|codeSnippetCopyButton
+{
+	padding-bottom: 1.5em;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-radius: 0;
+	left: 0;
+	top: 0;
+}
+
+@media print
+{
+	div.topicbody
+	{
+		width: 100%;
+	}
+
+	div.side-menu
+	{
+		display: none;
+	}
+
+	MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+
+	h1.PDF-lvl2
+	{
+		mc-heading-level: 2;
+	}
+
+	h1.PDF-lvl3
+	{
+		mc-heading-level: 3;
+	}
+
+	h1.PDF-lvl4
+	{
+		mc-heading-level: 4;
+	}
+
+	h1.PDF-lvl5
+	{
+		mc-heading-level: 5;
+	}
+
+	p.noteAlt
+	{
+		font-size: 1.1em;
+	}
+}
+
+/* FOR TABLET */
+
+@media only screen and (max-width: 1279px)
+{
+	.footer
+	{
+		padding: 2% 2% 1%;
+	}
+
+	html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	div.home-footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.home-footer > div:nth-child(2)
+	{
+		width: 75%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.menu-left
+	{
+		width: 20vw;
+	}
+}
+
+/* END OF TABLETS */
+/* FOR MOBILES */
+
+@media only screen and (max-width: 767px)
+{
+	div.container
+	{
+		flex-direction: column;
+	}
+
+	div.col
+	{
+		padding: 10px;
+	}
+
+	div.row
+	{
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	div.topic-hero h1
+	{
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	a.homepage,
+	p.homepage
+	{
+		font-size: 1em;
+	}
+
+	div.home-tiles p
+	{
+		line-height: 1.2;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10px;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div
+	{
+		margin-bottom: 10px;
+	}
+
+	div.article-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div:nth-child(5)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles img
+	{
+		width: 75%;
+	}
+
+	.footer-icons
+	{
+		text-align: center;
+	}
+
+	.footer
+	{
+		padding: 5% 7%;
+		text-align: center;
+	}
+
+	.footer-logo
+	{
+		text-align: center;
+	}
+
+	div.home-footer > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.home-footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin: 3% 0;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div
+	{
+		height: 110px;
+	}
+
+	h1
+	{
+		font-size: 1.4em;
+	}
+
+	h2
+	{
+		font-size: 1.3em;
+	}
+
+	h2.homepage
+	{
+		font-size: 1.3em;
+	}
+
+	h3
+	{
+		font-size: 1.2em;
+	}
+
+	h0
+	{
+		font-size: 1.3em;
+	}
+
+	h4
+	{
+		font-size: 1.1em;
+	}
+
+	div.menu-left
+	{
+		display: none;
+	}
+}
+
+/*END OF MOBILE*/
+/* Makes images appear as thumbnails*/
+
+img.Large-Image
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: 200px;
+}
+
+/* Creates a note with a background color*/
+
+p.warning
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #eb200A;
+	mc-auto-number-format: '{b}WARNING {/b}';
+	line-height: 18px;
+	overflow: hidden;
+	padding: 12px;
+}
+
+div.warning
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #eb200A;
+	mc-auto-number-format: '{b}WARNING {/b}';
+	line-height: 18px;
+	overflow: hidden;
+	padding: 12px;
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+
+p.noteAlt
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #e75014;
+	line-height: 18px;
+	mc-auto-number-format: '{b}NOTE {/b}';
+	overflow: hidden;
+	margin-bottom: 1.12em;
+	margin-top: 1.12em;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-left-style: solid;
+	border-left-width: 10px;
+	border-left-color: #e75014;
+	font-size: 1.1em;
+}
+
+div.note
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #e75014;
+	mc-auto-number-format: '{b}NOTE {/b}';
+	line-height: 18px;
+	overflow: hidden;
+	padding: 12px;
+	display: block;
+}
+
+/*div.note > p:first-child
+{
+	display: inline;
+}*/
+
+/*Defines variables*/
+
+span.mc-variable.dockcsr\00002EProductName
+{
+	font-weight: bold;
+}
+
+span.mc-variable.dockcsr\00002EShuttleClient
+{
+	font-weight: bold;
+}
+
+span.mc-variable.dockcsr\00002EShuttleServer
+{
+	font-weight: bold;
+}
+
+span.mc-variable.dockcsr\00002EShuttleStudio
+{
+	font-weight: bold;
+}
+
+span.mc-variable.dockcsr\00002EShuttleWebClient
+{
+	font-weight: bold;
+}
+
+span.mc-variable.dockcsr\00002EVersionNumberRN
+{
+	font-weight: bold;
+}
+
+span.mc-variable.dockcsr\00002EVersionNumberDocKCSR
+{
+	font-weight: bold;
+}
+
+span.mc-variable.dockcsr\00002EShuttleAddInLongName
+{
+	font-weight: bold;
+}
+
+span.mc-variable.dockcsr\00002EShuttleAddInShortName
+{
+	font-weight: bold;
+}
+
+/*Defines paragraph styles*/
+
+b.PANEL-TAB
+{
+	font-family: Calibri;
+	color: #1C2541;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+b.ui-element
+{
+	color: #1C2541;
+	font-weight: bold;
+}
+
+pre
+{
+	mc-disable-glossary-terms: true;
+	background-color: #f5f2f0;
+	font-family: Calibri;
+	font-size: 14px;
+}
+
+ul.mapintro
+{
+	font-size: 1.1em;
+}
+
+code
+{
+	mc-hyphenate: never;
+}
+
+/*Customizes the highlight color of the search results in a topic*/
+
+span.SearchHighlight1
+{
+	color: #000000;
+	background-color: #ffff66;
+}
+
+span.SearchHighlight2
+{
+	color: #000000;
+	background-color: #a0ffff;
+}
+
+span.SearchHighlight3
+{
+	color: #000000;
+	background-color: #99ff99;
+}
+
+span.SearchHighlight4
+{
+	color: #000000;
+	background-color: #ff9999;
+}
+
+span.SearchHighlight5
+{
+	color: #000000;
+	background-color: #ff66ff;
+}
+
+span.SearchHighlight6
+{
+	color: #ffffff;
+	background-color: #880000;
+}
+
+span.SearchHighlight7
+{
+	color: #ffffff;
+	background-color: #00aa00;
+}
+
+span.SearchHighlight8
+{
+	color: #ffffff;
+	background-color: #886800;
+}
+
+span.SearchHighlight9
+{
+	color: #ffffff;
+	background-color: #004699;
+}
+
+span.SearchHighlight10
+{
+	color: #ffffff;
+	background-color: #990099;
+}
+
+/*Customizes the "Top" button*/
+/*Main definition*/
+
+#myBtn
+{
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 30px;
+	z-index: 99;
+	font-size: 1.5em;
+	font-weight: bold;
+	border: 1px solid #1C2541;
+	outline: none;
+	cursor: pointer;
+	color: #FFF;
+	background-color: #1C2541;
+	padding: 15px;
+	border-radius: 4px;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: 'Segoe UI';
+}
+
+/*When hovering over the button*/
+
+#myBtn:hover
+{
+	background-color: #FFF;
+	color: #1C2541;
+}
+
+/*Only used in the "HTML Text Cell" article*/
+
+div.break-space
+{
+	border: 1px solid #000000;
+	width: 400px;
+	padding-left: 2px;
+}
+
+/*Removes padding to avoid blank space between nav and body*/
+
+div.body-container
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*Customizes the What's New on the hompage*/
+/* Creates the column display*/
+
+div.container-whats-new
+{
+	display: flex;
+}
+
+div.column-whats-new
+{
+	flex: 100%;
+}
+
+/*Customizes the boxes inside the column*/
+
+div.col-component-whatsnew
+{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: #fafafa;
+	border: 2px solid #e9ecef;
+	min-height: 150px;
+	margin-bottom: 3em;
+	margin-right: 2em;
+}
+
+/*Customizes the headers*/
+
+div.header-whats-new
+{
+	margin-top: 10px;
+	margin: 10px auto 0;
+	text-align: left;
+	width: 82%;
+}
+
+.header-whats-new img
+{
+	float: left;
+	margin-right: 2em;
+}
+
+h3.whatsnew
+{
+	position: relative;
+	padding-top: 0em;
+	font-size: 1.5em;
+}
+
+/*Customizes the content*/
+
+div.body-whats-new
+{
+	margin-top: 10px;
+	margin: 10px auto 0;
+	width: 100%;
+}
+
+p.body-whats-new
+{
+	margin: 10px 30px;
+}
+
+MadCap|dropDown.whatsnew	/*Hides bottom border for dropdowns on the homepage*/
+{
+	border-bottom: none;
+}
+
+img.icon
+{
+	vertical-align: middle;
+	width: 20px;
+	height: auto;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+}
+
+img.screenshot
+{
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #c0c0c0;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #c0c0c0;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #c0c0c0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #c0c0c0;
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+}
+
+h1.PDF-lvl2
+{
+	color: #e75014;
+	font-family: 'Segoe UI';
+}
+
+h1.PDF-lvl3
+{
+	color: #e75014;
+	font-family: 'Segoe UI';
+}
+
+h1.PDF-lvl4
+{
+	color: #e75014;
+	font-family: 'Segoe UI';
+}
+
+h1.PDF-lvl5
+{
+	color: #e75014;
+	font-family: 'Segoe UI';
+}
+
+div.doc-in-progress
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #e75014;
+	mc-auto-number-format: '{b}INFORMATION {/b}';
+	line-height: 18px;
+	overflow: hidden;
+	padding: 12px;
+	display: block;
+}
+
+div.home
+{
+	
+}
+
+MadCap|dropDownHotspot.content
+{
+	font-size: 1.2em;
+}
+
+p.space
+{
+	margin: 0;
+	font-size: 0.5em;
+}
+
+ul.lvl-2-numbered-list
+{
+	list-style-type: disc;
+}
+
+ul.lvl-2-numbered-list > li > ol
+{
+	list-style-type: decimal;
+	list-style-image: none;
+}
+
+/* Begin BUTTONS for Show/Hide ToC  */
+
+button.toggle-toc-on-button .button-icon,
+button.toggle-toc-off-button .button-icon
+{
+	background-size: 20px !important;
+}
+
+/* End BUTTONS for Show/Hide ToC  */
+/* Begin Code Snippet Copy Button  */
+
+a.codeSnippetCopyButton
+{
+	text-decoration: none;
+	color: #e75014;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+/* End Code Snippet Copy Button  */
+/* Box for search tip within the doc page */
+
+div.search-tip
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #283464;
+	line-height: 18px;
+	overflow: auto;
+	margin-bottom: 1.15em;
+	margin-top: 1.15em;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-image: url('../Images/topic/tip-icon-3-32px.png');
+	background-repeat: no-repeat;
+	background-position: 10px 18px;
+}
+
+div.search-tip > p:first-child
+{
+	mc-auto-number-format: '{b}SEARCH TIP  {/b}';
+	margin-left: 40px;
+}
+
+/* Box for app tips */
+
+div.app-tips
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #283464;
+	line-height: 18px;
+	overflow: auto;
+	margin-bottom: 1.15em;
+	margin-top: 1.15em;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-image: url('../Images/topic/tip-icon-3-32px.png');
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+}
+
+div.app-tips > p:first-child
+{
+	mc-auto-number-format: '{b}TIP  {/b}';
+	margin-left: 40px;
+}
+
+div.app-tips > p:nth-child(n+1)
+{
+	margin-left: 40px;
+}
+
+/* Tips in search results */
+
+div.Div-row-8-1	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Div-row-8-1::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Div-row-8-1::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Div-row-8-1 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 1px;
+	padding-left: 1px;
+}
+
+div.Div-row-8-1 > div:nth-child(1)
+{
+	margin-left: 0%;
+	width: 55.55556%;
+}
+
+div.Div-row-8-1 > div:nth-child(2)
+{
+	width: 44.44444%;
+	margin-left: 0%;
+}
+
+div.Div-row-8-1 > div:nth-child(3)
+{
+	width: 8.3333%;
+	margin-left: 0%;
+}
+
+div.Div-row-8-1 > div:nth-child(4)
+{
+	width: 8.3333%;
+	margin-left: 0%;
+}
+
+p.invisible
+{
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 1279px)
+{
+	div.Div-row-8-1 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Div-row-8-1 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Div-row-8-1 > div:nth-child(3)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Div-row-8-1 > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div.Div-row-8-1 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Div-row-8-1 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Div-row-8-1 > div:nth-child(3)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Div-row-8-1 > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+}
+
+div.search-results-layout
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+}
+
+/* Add menu for related documentations */
+
+MadCap|helpControlMenu
+{
+	font-family: 'Segoe UI';
+	background-color: #e9ecef;
+	font-size: 1em;
+	color: #076685;
+	font-weight: bold;
+}
+
+MadCap|helpControlMenuItem
+{
+	font-family: 'Segoe UI';
+	font-size: 1em;
+	color: #076685;
+	font-weight: bold;
+}
+
+MadCap|relatedTopics
+{
+	font-family: 'Segoe UI';
+	color: #076685;
+	mc-image-spacing: 10px;
+}
+
+MadCap|helpControlMenuItem.Highlighted
+{
+	font-weight: bold;
+	color: #076685;
+	background-color: #ffffff;
+}
+
+MadCap|dropDownHotspot.sub-subtitle
+{
+	color: #e75014;
+	font-family: 'Segoe UI';
+	font-size: 1.02em;
+}
+
+p.note-table
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #e75014;
+	line-height: 18px;
+	mc-auto-number-format: '{b}NOTE {/b}';
+	overflow: hidden;
+	margin-bottom: 1.12em;
+	margin-top: 1.12em;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-left-style: solid;
+	border-left-width: 10px;
+	border-left-color: #e75014;
+	font-size: 1.02em;
+}
+
+div.note-table
+{
+	background-color: #f4f7f7;
+	border-left: solid 10px #e75014;
+	mc-auto-number-format: '{b}NOTE {/b}';
+	line-height: 18px;
+	overflow: hidden;
+	padding: 12px;
+	display: block;
+	font-size: 1.02em;
+	font-family: 'Segoe UI';
+}
+

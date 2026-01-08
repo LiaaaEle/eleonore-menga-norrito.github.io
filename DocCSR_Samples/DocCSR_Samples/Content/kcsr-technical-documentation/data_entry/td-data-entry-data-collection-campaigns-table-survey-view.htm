@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Data Collection Campaigns: Table and Survey Views</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <!--Need to replace Flare's button element with "<button type="button" class="copy-btn" MadCap:conditions="Default.ScreenOnly">Copy</button>"
+		in each code snippet when creating or after modifying. This is until Flare fix their button to copy without unicode fillers for spaces. Note that it has the condition ScreenOnly so that no button appears in the PDF (JB)-->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/Stylesheets/clipboard.css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.toggle-toc-on-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.toggle-toc-off-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Basic-HTML.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Resources/Scripts/clipboard.js">
+        </script>
+        <script type="text/javascript" defer="defer" src="../../Resources/Scripts/scroll-button.js">
+        </script>
+        <script type="text/javascript" src="../../../Skins/Default/Scripts/Topic-Toolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../general/homepage.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field: Enter your words in double quotation marks and use filter for refined results." placeholder="Enter your words in double quotation marks &quot; &quot; and use filter for refined results." />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All files" title="All files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie toggle-toc-on-button" title="Show left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Show left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie toggle-toc-off-button" title="Hide left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Hide left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie previous-topic-button" title="Previous documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Previous documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Next documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Next documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="topic-layout">
+                                        <div class="topicbody">
+                                            <!--This page was last updated on <MadCap:variable name="General.NewDateTimeVariable" />.-->
+                                            <div role="main" id="mc-main-content">
+                                                <h1 data-mc-conditions="Default.ScreenOnly" id="DataCollectionCampaignsTableandSurveyViews" data-magellan-target="DataCollectionCampaignsTableandSurveyViews"><a name="top"></a>Data Collection Campaigns: Table and Survey Views<img src="../../Resources/Images/version-icons/icon-csr-insight-2-13.png" title="This documentation is based on version 2.13 of CSR Insight application." alt="CSR Insight version 2.13" style="max-width: 37%;vertical-align: super;" /></h1>
+                                                <p data-mc-conditions="Default.ScreenOnly"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Chat Room|../../kcsr-quick-start/qs-chat-room.htm" target="_blank" style="mc-label: 'Related &quot;Quick Start&quot; documentations';mc-help-control-display: popup;"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related "Quick Start" documentations</span></a>
+                                                </p>
+                                                <p data-mc-conditions="Default.ScreenOnly"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Fill In the Excel Template|../appendix/td-appendix-fill-excel-template.htm" target="_blank" style="mc-label: 'Related &quot;Appendices&quot; documentations';mc-help-control-display: popup;"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related "Appendices" documentations</span></a>
+                                                </p>
+                                                <div class="search-tip">
+                                                    <p data-mc-autonum="&lt;b&gt;SEARCH TIP &#160;&lt;/b&gt;"><span class="autonumber"><span><b>SEARCH TIP &#160;</b></span></span>Press <b>CTRL + F</b> (Windows and Linux) or <b>CMD + F</b> (Mac) to search within this page.</p>
+                                                </div>
+                                                <div class="intro">
+                                                    <p>To access this screen, click: <b>Data entry</b>&#160;&gt;&#160;<b>Data collection campaigns</b>.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" /></a><a name="Security"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Security Notes</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Some actions, such as screen access, are permitted only for authorized users, that is, users with the appropriate profile. In other words, if the user does not have the right profile, the user cannot perform the action.</p>
+                                                        <p>To configure this security (also called user rights), complete the following steps:</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Define the profiles in the <a href="../administration/td-administration-user-rights-profile-management.htm">Profile Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Define users and attach one or more profiles to them in the <a href="../administration/td-administration-user-rights-user-management.htm">User Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Assign user rights to the desired profiles in the <a href="../administration/td-administration-user-rights-matrix.htm">Profile Matrix</a> screen.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>The table below contains screen actions that are related to user rights:</p>
+                                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3" data-mc-conditions="Default.ScreenOnly">
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Module</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Screen</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Action</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Step</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="31">
+                                                                        <p>Reporting</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="31">
+                                                                        <p>Data collection campaigns</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Screen access</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Enter data, comments, and attachments</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Promote workflow</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Close workflow</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Unpromote workflow</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Ask a question</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Answer a question</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>See campaigns not started</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Import data</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Import data with profile restrictions*</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Import data on historical campaigns**</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Notify for validation</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                        <p>Notify for closure</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>*Enables you to import data on collect points marked as <b>Data to be imported by administrator</b> on the <a href="../administration/td-administration-campaign-settings-entities.htm">Campaign Settings: Entities to Deploy for an Indicator</a> screen.</p>
+                                                        <p>**Enables you to import historical campaigns data. For more information on historical campaigns, see <a href="../administration/td-administration-campaign-settings.htm">Campaign Settings</a>.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="note" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span><span style="font-size: 1.1em;">This documentation presents you the common features of the </span><b style="font-size: 1.1em;">Table and Survey views</b><span style="font-size: 1.1em;">.</span>
+                                                    <br />
+                                                    <br /><span style="font-size: 1.1em;">For more information on this screen, see the following documentations:</span>
+                                                    <br />
+                                                    <ul>
+                                                        <li>
+                                                            <p><a href="td-data-entry-data-collection-campaigns-intro.htm">Data Collection Campaigns: Introduction</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-data-entry-data-collection-campaigns-table-view.htm">Data Collection Campaigns: Table View</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-data-entry-data-collection-campaigns-survey-view.htm">Data Collection Campaigns: Survey View</a>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p>You can use, in both <b>Table and Survey views</b>, the following common features:<br /></p>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="#Change">Change the Unit</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#View">View the Identity Card</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#View2">View the Validation Information</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Request">Request Adjustment</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Ask">Ask and Answer a Question</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Import">Import and Export Data</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <h2 id="ChangetheUnit" data-magellan-target="ChangetheUnit"><a name="Change"></a>Change the Unit</h2>
+                                                <p>In the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application, you can use three types of units:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>The default unit</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The input unit: the unit of the data entered for the indicator</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The preference unit: the unit your entered data will be converted to</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="space">&#160;</p>
+                                                <p>By default, the <b>Unit</b> column (table view) or the cell next to the data entry cell (survey view) displays the default unit set up for the indicator on the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a> screen.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>If the unit is changeable, you can select a new input unit. If so, a drop-down menu appears in the cell.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>You can also convert the indicator value to one or several preference units.</p>
+                                                <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                    <p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/unit-change-reporting-campaign.png" title="Unit drop-down menu" alt="Unit drop-down menu" style="max-width: 20%;" />
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result"><b>Unit</b> drop-down menu</p>
+                                                </div>
+                                                <p class="space">&#160;</p>
+                                                <p class="space">&#160;</p>
+                                                <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To enable unit change for an indicator, see the documentation on the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a> screen. The unit can be changeable only for collected data.<br /><br />To set up the units selectable in the drop-down menu, see the documentation on the <a href="../administration/td-administration-data-units.htm">Unit Management</a> and the <a href="../administration/td-administration-data-units-categories.htm">Unit Category Management</a> screens. Only units with a conversion factor can be selected.</div>
+                                                <h3 id="SelectaNewInputUnit" data-magellan-target="SelectaNewInputUnit">Select a New Input Unit</h3>
+                                                <p>If the indicator has no data entered:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Select the desired unit from the drop-down menu in the <b>Unit</b> column (table view) or in the cell next to the data entry cell (survey view).</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p><b>Save</b>.</p>
+                                                        <p class="task-result">The unit selected becomes the indicator input unit.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>If the indicator has data entered:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Select the desired unit from the drop-down menu in the <b>Unit</b> column (table view) or in the cell next to the data value cell (survey view).</p>
+                                                        <p class="task-result">The indicator value is converted to the preference unit selected.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter the new indicator value for this unit.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p><b>Save</b>.</p>
+                                                        <p class="task-result">The preference unit becomes the input unit.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="ConvertDatatoaPreferenceUnit" data-magellan-target="ConvertDatatoaPreferenceUnit">Convert Data to a Preference Unit</h3>
+                                                <p>To convert the indicator value to the preference unit of your choice, select the unit from the drop-down menu in the <b>Unit</b> column (table view) or in the cell next to the data entry cell (survey view).</p>
+                                                <p class="task-result">The indicator value is automatically converted to the preference unit selected.</p>
+                                                <h2 id="ViewtheIdentityCard" data-magellan-target="ViewtheIdentityCard"><a name="View"></a>View the Identity Card</h2>
+                                                <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>On this screen, the identity card is read-only. To edit the identity card information, see the documentation on the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a>.<br /><br />By default, the <b>Description</b>, <b>Label</b> and <b>Short label</b> fields are displayed in your user language. To view these fields  in other languages available in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application, click them.</div>
+                                                <p class="space">&#160;</p>
+                                                <p>The identity card allows you to view all information on the indicator.</p>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>To view the identity card:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button.png" style="max-width: 5%;" title="Three dots button" alt="Three dots" /> button in the indicator line (table view), or in the indicator card (survey view).</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>Identity card</b>.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/identity-card-button-reporting-campaign.png" title="Three dots drop-down menu: Identity card button" alt="Three dots drop-down menu: Identity card button" style="max-width: 40%;" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Three dots</b> drop-down menu</p>
+                                                        </div>
+                                                        <p class="space" data-mc-conditions="Default.ScreenOnly">&#160;</p>
+                                                        <p class="task-result">The <b>Identity card</b> pop-up windows appears.</p>
+                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/identity-card-reporting-campaign.png" data-mc-popup-alt="Indicator identity card"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="1521" data-mc-height="646" src="../../Resources/Images/identity-card-reporting-campaign.png" alt="Indicator identity card" title="Indicator identity card" tabindex="" style="max-width: 100%;" /></a>
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="ViewtheValidationInformation" data-magellan-target="ViewtheValidationInformation"><a name="View2"></a>View the Validation Information</h2>
+                                                <p>You can view validation information via:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>The validation path</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The validation history</p>
+                                                    </li>
+                                                </ul>
+                                                <h3 id="ViewtheValidationPath" data-magellan-target="ViewtheValidationPath">View the Validation Path</h3>
+                                                <p>The validation path allows you to view information, such as the date and the user name, for each workflow step from the campaign opening to the campaign locking.</p>
+                                                <p class="space">&#160;</p>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To know more on workflow steps, see the <b>Workflow Process</b> section in the <a href="td-data-entry-data-collection-campaigns-table-view.htm">Data Collection Campaigns: Table View</a> documentation, or in the <a href="td-data-entry-data-collection-campaigns-survey-view.htm">Data Collection Campaigns: Survey View</a> documentation.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To view the validation path:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button.png" style="max-width: 5%;" title="Three dots button" alt="Three dots" /> button in the indicator line (table view), or in the indicator card (survey view).</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>Validation path</b>.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/validation-path-reporting-campaign.png" title="Three dots drop-down menu: Validation path button" alt="Three dots drop-down menu: Validation path button" style="max-width: 40%;" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Three dots</b> drop-down menu</p>
+                                                        </div>
+                                                        <p class="space" data-mc-conditions="Default.ScreenOnly">&#160;</p>
+                                                        <p class="task-result">The <b>Validation path</b> pop-up window appears.</p>
+                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/validation-path-pop-up-windows-reporting-campaign.png" data-mc-popup-alt="Validation path pop-up window"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="1597" data-mc-height="730" src="../../Resources/Images/validation-path-pop-up-windows-reporting-campaign.png" alt="Validation path pop-up window" title="Validation path pop-up window" tabindex="" style="max-width: 100%;" /></a>
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To ask a question to the user who performed the action:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/email-button-4.png" title="Chat button" alt="Chat" style="vertical-align: middle;max-width: 4%;" /> icon inside the workflow step card.</p>
+                                                        <p class="task-result">The <b>Ask a question</b> pop-up panel appears.</p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/ask-question-reporting-campaign.png" title="Ask a question pop-up panel" alt="Ask a question pop-up panel" style="max-width: 80%;" />
+                                                        </p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Apply the procedure written in the <a href="#Ask">Ask and Answer a Question</a> section below.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="ViewtheValidationHistory" data-magellan-target="ViewtheValidationHistory">View the Validation History</h3>
+                                                <p>To view the validation history for an indicator:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button.png" title="Three dots button" alt="Three dots" style="max-width: 5%;" /> button at the right of the cell in the campaign current "Period - Year" column for the desired indicator (table view), or at the top right of the desired indicator card (survey view).</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>Validation History</b>.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/validation-history-reporting-campaign.png" title="Three dots drop-down menu: Validation history button" alt="Three dots drop-down menu: Validation history button" style="max-width: 40%;" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Three dots</b> drop-down menu</p>
+                                                        </div>
+                                                        <p class="space" data-mc-conditions="Default.ScreenOnly">&#160;</p>
+                                                        <p class="task-result">The <a href="td-data-entry-validation-history.htm">Validation History</a> screen appears.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="RequestAdjustment" data-magellan-target="RequestAdjustment"><a name="Request"></a>Request Adjustment</h2>
+                                                <p>You can request adjustment, that is make a request to modify data entered in a campaign that has been closed.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To request an indicator value adjustment:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p> Click the <img src="../../Resources/Images/buttons-icons/three-dots-button.png" title="Three dots button" alt="Three dots" style="max-width: 5%;" /> button at the right of the cell in the campaign current "Period - Year" column for the desired indicator (table view), or at the top right of the desired indicator card (survey view).</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>Request Adjustment</b>.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/request-adjustment-reporting-campaign.png" title="Three dots drop-down menu: Request adjustment button" alt="Three dots drop-down menu: Request adjustment button" style="max-width: 40%;" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Three dots</b> drop-down menu</p>
+                                                        </div>
+                                                        <p class="space" data-mc-conditions="Default.ScreenOnly">&#160;</p>
+                                                        <p class="task-result">The <b>Adjustment context</b> pop-up panel appears.</p>
+                                                        <p class="space">&#160;</p>
+                                                        <p>See the documentation on the <a href="td-data-entry-campaign-adjustment-requests.htm">Adjustment Requests Summary</a>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="AskandAnsweraQuestion" data-magellan-target="AskandAnsweraQuestion"><a name="Ask"></a><a name="aanchor14"></a>
+                                                    <MadCap:concept term="Chat room" />Ask and Answer a Question</h2>
+                                                <p>There are two ways to ask and answer a question about an indicator:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Through this screen from the table view or the survey view</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Through the <b>Chat Room</b></p>
+                                                    </li>
+                                                </ul>
+                                                <p class="space">&#160;</p>
+                                                <p>For the first way, see below.</p>
+                                                <p>For the second way, see the documentation on the <a href="../../kcsr-quick-start/qs-chat-room.htm">Chat Room</a>.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>Questions are classified by topics (indicator, value, campaign, free, and so on).</p>
+                                                <h3 id="AskaQuestion" data-magellan-target="AskaQuestion">Ask a Question</h3>
+                                                <p>To ask a question:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/chat-button.png" style="width: auto;height: auto;max-width: 5%;" title="Chat button" alt="Chat" /> button in the <b>Actions</b> column of the indicator (table view), or at the top right of the indicator card (survey view).</p>
+                                                        <p class="task-result">The <b>Ask a question</b> pop-up panel appears.</p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/ask-question-reporting-campaign.png" title="Ask a question pop-up panel" alt="Ask a question pop-up panel" style="max-width: 80%;" />
+                                                        </p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select the <b>Topic</b>, the <b>Campaign</b>, the <b>Entity</b>, and the <b>Indicator</b>.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>If you select <b>Free</b> as a topic, you do not need to select the <b>Campaign</b>, the <b>Entity</b>, and the <b>Indicator</b>.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Select the <b>Receiver</b> of the question.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>If the topic is <b>Indicator</b>, the question is directly assigned to the indicator referent.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Write your question.</p>
+                                                        <p>You can set the text font, size, and style.</p>
+                                                        <p>To add an hypertext link, click the <img src="../../Resources/Images/buttons-icons/hypertext-link-button.png" style="max-width: 3%;" title="Hypertext link button" alt="Hypertext link" /> button.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Click <b>Send</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="AnsweraQuestion" data-magellan-target="AnsweraQuestion">Answer a Question</h3>
+                                                <p>To answer a question:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/chat-button-2.png" style="max-width: 5%;" title="Red chat button" alt="Red chat" /> button in the <b>Actions</b> column of the indicator (table view), or at the top right of the indicator card (survey view).</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select <b>Show conversation</b>.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/show-conversation-reporting-campaign.png" title="Red chat drop-down menu: Show conversation button" alt="Red chat drop-down menu: Show conversation button" style="max-width: 48%;" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Red chat</b> drop-down menu</p>
+                                                        </div>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Enter your comment.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/answer-question-chat-room.png" title="Comment input zone" alt="Comment input zone" style="max-width: 75%;" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result">Comment entry zone</p>
+                                                        </div>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/send-button.png" style="max-width: 5%;" title="Send button" alt="Send" /> button.</p>
+                                                        <p class="task-result">The chat button turns yellow: <img src="../../Resources/Images/buttons-icons/chat-button-3.png" style="max-width: 5%;" title="Yellow chat button" alt="Yellow chat button" />.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>The user who asked the question can either answer again or close the conversation by checking the <b>Treated</b> box.</p>
+                                                <p>
+                                                    <img src="../../Resources/Images/treated-box-chat-room.png" title="Treated box" alt="Treated box" style="max-width: 70%;" />
+                                                </p>
+                                                <p class="task-result">Once the conversation is closed, the chat button turns green: <img src="../../Resources/Images/buttons-icons/chat-button-4.png" style="max-width: 5%;" title="Green chat button" alt="Green chat button" />.</p>
+                                                <h2 id="ImportandExportData" data-magellan-target="ImportandExportData"><a name="Import"></a>Import and Export Data</h2>
+                                                <p>You can <a href="#Import3">import and export data</a>, as well as <a href="#View3">track</a> all your imports.</p>
+                                                <h3 id="ImportandExportData1" data-magellan-target="ImportandExportData1"><a name="Import3"></a>Import and Export Data</h3>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Only authorized users can import data. See the <a href="#Security">Security Notes</a> above.</p>
+                                                <p>You can <a href="#Export">export</a>, then <a href="#Import2">import</a> data through this screen.</p>
+                                                <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                    <p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/import-export-reporting-campaign.png" style="max-width: 50%;" title="Import data drop-down menu: Export and import data buttons" alt="Import data drop-down menu: Export and import data buttons">
+                                                            </img>
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result"><b>Import data</b> drop-down menu</p>
+                                                </div>
+                                                <h4><a name="Export"></a>Export Data</h4>
+                                                <p>To export data:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click <b>Export format and data</b> from the <b>Import data</b> drop-down menu at the top right of the screen.</p>
+                                                        <p class="task-result">The <b>Data export</b> pop-up window appears with the download link.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Depending on the indicators and entities deployed on the campaign, select one or more items from the following drop-down menus:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><b>Entity</b>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p><b>Themes</b>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p><b>Sections</b>
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Select the <b>Indicator search mode</b> to determine how the system matches indicators in your Excel file to indicators in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><b>Label</b> if your Excel file uses indicator names</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><b>Reference</b> if your Excel file uses indicator codes</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Click the download link for the Excel file.</p>
+                                                    </li>
+                                                </ol>
+                                                <h4><a name="Import2"></a>Import Data</h4>
+                                                <div class="warning" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;WARNING &lt;/b&gt;"><span class="autonumber"><span><b>WARNING </b></span></span>The import is carried out for all open campaigns listed in the import file. <br /><br />Once the import is launched, please ensure not to initiate another import until you have verified its status in the <a href="../administration/td-administration-data-import.htm">Data Import</a> screen or by clicking the <img src="../../Resources/Images/buttons-icons/notification-bell-button.png" title="Notification bell button" alt="Notification bell" style="vertical-align: middle;max-width: 5%;" /> button in the toolbar at the top right of the screen.</div>
+                                                <p class="space">&#160;</p>
+                                                <p>To import data:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Export data, as mentioned above.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Open the exported Excel file.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Fill in the Excel template, then save your data.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To help you fill in the Excel template, see the <a href="../appendix/td-appendix-fill-excel-template.htm#Data2">Fill In the Excel Template</a> appendix.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Back to the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application, click <b>Import data</b> from the <b>Import data</b> drop-down menu at the top right of the screen.</p>
+                                                        <p class="task-result">The <b>Data import</b> pop-up window appears.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Select the <b>Import mode</b>:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><b>Create and update (without deleting)</b> if you want to add new data without deleting the data that already exist in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application. No data overwriting.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><b>Create, update, and delete</b> if you want to overwrite or clear the existing data in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application. Overwriting means that existing data is deleted and replaced with new data.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="6">
+                                                        <p>Select the <b>Indicator search mode</b> to determine how the system matches indicators in your Excel file to indicators in the <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><b>Label</b> if your Excel file uses indicator names</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><b>Reference</b> if your Excel file uses indicator codes</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="7">
+                                                        <p>Choose a file.</p>
+                                                    </li>
+                                                    <li value="8">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                    <li value="9">
+                                                        <p>Check if your import is successful or not. To do so, click the <img src="../../Resources/Images/buttons-icons/notification-bell-button.png" title="Notification bell button" alt="Notification bell" style="vertical-align: middle;max-width: 5%;" /> button in the toolbar at the top right of the screen.</p>
+                                                        <p class="task-result">The <b>Notifications</b> pop-up window appears on the right.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/notifications-pop-up-window.png" style="max-width: 50%;" title="Notifications pop-up window" alt="Notifications pop-up window">
+                                                                    </img>
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Notifications</b> pop-up window</p>
+                                                        </div>
+                                                    </li>
+                                                    <li value="10">
+                                                        <p>If your import is successful, refresh the screen. <i>Your new data appears on the screen.</i> If not, read the next steps.</p>
+                                                    </li>
+                                                    <li value="11">
+                                                        <p>If your import is unsuccessful, click the <img src="../../Resources/Images/buttons-icons/attached-files-button.png" title="Attached files button" alt="Attached files" style="vertical-align: middle;max-width: 6%;" /> button to download an error file.</p>
+                                                    </li>
+                                                    <li value="12">
+                                                        <p>Make corrections as needed, then import your file again.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>For more details on failed imports, see <a href="../appendix/td-appendix-fill-excel-template.htm#If">Fill In the Excel Template</a>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="ViewtheDataHistory" data-magellan-target="ViewtheDataHistory"><a name="View3"></a>View the Data History</h3>
+                                                <p>You can track all imports already made.</p>
+                                                <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                    <p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/data-history-reporting-campaign.png" style="max-width: 50%;" title="Import data drop-down menu: Data History button" alt="Import data drop-down menu: Data History button">
+                                                            </img>
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result"><b>Import data</b> drop-down menu</p>
+                                                </div>
+                                                <p>To view the data history, click <b>Data History</b> from the <b>Import data</b> drop-down menu at the top right of the screen.</p>
+                                                <p class="task-result">The <a href="../administration/td-administration-data-import.htm">Data Import</a> screen appears.</p>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu">
+                                            <div data-sticky-container="" id="30uu3HX2_ECfhhxe8WF0TA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="30uu3HX2_ECfhhxe8WF0TA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1280px)" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menu_proxy_skin mc-component">
+                                                        <li class="tree-node"><a href="#DataCollectionCampaignsTableandSurveyViews">Data Collection Campaigns: Table and Survey Views</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#ChangetheUnit">Change the Unit</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#SelectaNewInputUnit">Select a New Input Unit</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#ConvertDatatoaPreferenceUnit">Convert Data to a Preference Unit</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ViewtheIdentityCard">View the Identity Card</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ViewtheValidationInformation">View the Validation Information</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#ViewtheValidationPath">View the Validation Path</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#ViewtheValidationHistory">View the Validation History</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#RequestAdjustment">Request Adjustment</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#AskandAnsweraQuestion">Ask and Answer a Question</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#AskaQuestion">Ask a Question</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#AnsweraQuestion">Answer a Question</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ImportandExportData">Import and Export Data</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#ImportandExportData1">Import and Export Data</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#ViewtheDataHistory">View the Data History</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="invisible"><a href="../../general/search-tips.htm" class="MCXref xref">Your search for  returned  result(s).</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

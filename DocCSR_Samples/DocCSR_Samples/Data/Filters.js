@@ -1,0 +1,1 @@
+define({'Carbon footprint':{c:'Carbon footprint', cm:'', o:2},'Proforma':{c:'Proforma', cm:'', o:3},'Forecast':{c:'Forecast', cm:'', o:4},'Chat room':{c:'Chat room', cm:'', o:1},'Home screen':{c:'Home screen', cm:'', o:0},'CSRD':{c:'CSRD', cm:'', o:5},})

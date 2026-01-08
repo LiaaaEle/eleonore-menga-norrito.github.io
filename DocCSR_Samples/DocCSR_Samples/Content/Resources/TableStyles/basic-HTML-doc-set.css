@@ -1,0 +1,635 @@
+/* MadCap Table Style: */
+
+/*<meta Version="9" />*/
+
+mcTableStyle
+{
+	name: Basic-HTML;
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #1c2541;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #1c2541;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #1c2541;
+	cell-padding-left: 0px;
+	cell-padding-right: 0px;
+	cell-padding-top: 0px;
+	cell-padding-bottom: 0px;
+	max-id: 4;
+	border-spacing-y: 1;
+	border-spacing-x: 3;
+	margin-bottom: 2em;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #1c2541;
+	name: Column1;
+	id: 0;
+	cell-padding-left: 0.5em;
+	cell-padding-right: 0.5em;
+	cell-padding-top: 0em;
+	cell-padding-bottom: 0em;
+	type: Automatic;
+}
+
+mcTableHeadStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	background-color: #e9ecef;
+	separator-color: #1c2541;
+	name: Header1;
+	id: 3;
+	color: #1c2541;
+	cell-padding-left: 5px;
+	cell-padding-right: 5px;
+	cell-padding-top: 5px;
+	cell-padding-bottom: 5px;
+	cell-content-style-tag: none;
+	size: 0;
+	font-size: 1.1em;
+	font-family: 'Segoe UI Semibold';
+	text-align: left;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	font-weight: normal;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #1c2541;
+	name: Body1;
+	id: 1;
+	background-color: #ffffff;
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	cell-padding-bottom: 0em;
+	cell-padding-left: 0.5em;
+	cell-padding-right: 0.5em;
+	cell-padding-top: 0em;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-Basic-HTML
+{
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-color: #1c2541;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-color: #1c2541;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-color: #1c2541;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #1c2541;
+	border-bottom-width: 1px;
+	margin-bottom: 2em;
+	border-spacing: 3px 1px;
+}
+
+.TableStyle-Basic-HTML-Column-Column1
+{
+	
+}
+
+.TableStyle-Basic-HTML-Head-Header1
+{
+	height: 0;
+}
+
+.TableStyle-Basic-HTML-HeadI-Column1-Header1
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.TableStyle-Basic-HTML-HeadI-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-HeadE-Column1-Header1
+{
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-color: #1c2541;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Basic-HTML-HeadE-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-HeadF-Column1-Header1
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-color: #1c2541;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Basic-HTML-HeadF-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-HeadH-Column1-Header1
+{
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.TableStyle-Basic-HTML-HeadH-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-HeadD-Column1-Header1
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-color: #1c2541;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Basic-HTML-HeadD-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-HeadC-Column1-Header1
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.TableStyle-Basic-HTML-HeadC-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-HeadB-Column1-Header1
+{
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.TableStyle-Basic-HTML-HeadB-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-HeadA-Column1-Header1
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.TableStyle-Basic-HTML-HeadA-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-HeadG-Column1-Header1
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+	text-align: left;
+	background-color: #e9ecef;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.TableStyle-Basic-HTML-HeadG-Column1-Header1 p
+{
+	color: #1c2541;
+	font-family: 'Segoe UI Semibold';
+	font-size: 1.1em;
+}
+
+.TableStyle-Basic-HTML-FootI-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-FootI-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-FootE-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+}
+
+.TableStyle-Basic-HTML-FootE-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-FootF-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-FootF-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-FootH-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+}
+
+.TableStyle-Basic-HTML-FootH-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-FootD-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-FootD-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-FootC-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-FootC-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-FootB-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+}
+
+.TableStyle-Basic-HTML-FootB-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-FootA-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-FootA-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-FootG-Column1-
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-FootG-Column1- p
+{
+	
+}
+
+.TableStyle-Basic-HTML-Body-Body1
+{
+	
+}
+
+.TableStyle-Basic-HTML-BodyI-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-BodyI-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+.TableStyle-Basic-HTML-BodyE-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	border-bottom-width: 1px;
+	border-bottom-color: #1c2541;
+	border-bottom-style: solid;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+}
+
+.TableStyle-Basic-HTML-BodyE-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+.TableStyle-Basic-HTML-BodyF-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	border-bottom-width: 1px;
+	border-bottom-color: #1c2541;
+	border-bottom-style: solid;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-BodyF-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+.TableStyle-Basic-HTML-BodyH-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+}
+
+.TableStyle-Basic-HTML-BodyH-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+.TableStyle-Basic-HTML-BodyD-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	border-bottom-width: 1px;
+	border-bottom-color: #1c2541;
+	border-bottom-style: solid;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-BodyD-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+.TableStyle-Basic-HTML-BodyC-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-BodyC-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+.TableStyle-Basic-HTML-BodyB-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	border-right-width: 1px;
+	border-right-color: #1c2541;
+	border-right-style: solid;
+}
+
+.TableStyle-Basic-HTML-BodyB-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+.TableStyle-Basic-HTML-BodyA-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-BodyA-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+.TableStyle-Basic-HTML-BodyG-Column1-Body1
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+	background-color: #ffffff;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+
+.TableStyle-Basic-HTML-BodyG-Column1-Body1 p
+{
+	font-family: 'Segoe UI Light';
+	font-size: 1.02em;
+	font-weight: normal;
+}
+
+

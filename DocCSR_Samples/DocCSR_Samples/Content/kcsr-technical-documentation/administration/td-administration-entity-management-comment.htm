@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Entity Management: Comment Column</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <!--Need to replace Flare's button element with "<button type="button" class="copy-btn" MadCap:conditions="Default.ScreenOnly">Copy</button>"
+		in each code snippet when creating or after modifying. This is until Flare fix their button to copy without unicode fillers for spaces. Note that it has the condition ScreenOnly so that no button appears in the PDF (JB)-->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/Stylesheets/clipboard.css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.toggle-toc-on-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.toggle-toc-off-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Basic-HTML.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Resources/Scripts/clipboard.js">
+        </script>
+        <script type="text/javascript" defer="defer" src="../../Resources/Scripts/scroll-button.js">
+        </script>
+        <script type="text/javascript" src="../../../Skins/Default/Scripts/Topic-Toolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../general/homepage.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field: Enter your words in double quotation marks and use filter for refined results." placeholder="Enter your words in double quotation marks &quot; &quot; and use filter for refined results." />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All files" title="All files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie toggle-toc-on-button" title="Show left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Show left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie toggle-toc-off-button" title="Hide left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Hide left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie previous-topic-button" title="Previous documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Previous documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Next documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Next documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="topic-layout">
+                                        <div class="topicbody">
+                                            <!--This page was last updated on <MadCap:variable name="General.NewDateTimeVariable" />.-->
+                                            <div role="main" id="mc-main-content">
+                                                <h1 data-mc-conditions="Default.ScreenOnly" id="EntityManagementCommentColumn" data-magellan-target="EntityManagementCommentColumn"><a name="top"></a>Entity Management: Comment Column<img src="../../Resources/Images/version-icons/icon-csr-insight-2-13.png" title="This documentation is based on version 2.13 of CSR Insight application." alt="CSR Insight version 2.13" style="max-width: 37%;vertical-align: super;" /></h1>
+                                                <div class="search-tip">
+                                                    <p data-mc-autonum="&lt;b&gt;SEARCH TIP &#160;&lt;/b&gt;"><span class="autonumber"><span><b>SEARCH TIP &#160;</b></span></span>Press <b>CTRL + F</b> (Windows and Linux) or <b>CMD + F</b> (Mac) to search within this page.</p>
+                                                </div>
+                                                <div class="intro">
+                                                    <p>To access this screen, click: <b>Administration</b>&#160;&gt;&#160;<b>Entity management</b>&#160;&gt;&#160;<b>Entity management</b>.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Security Notes</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Some actions, such as screen access, are permitted only for authorized users, that is, users with the appropriate profile. In other words, if the user does not have the right profile, the user cannot perform the action.</p>
+                                                        <p>To configure this security (also called user rights), complete the following steps:</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Define the profiles in the <a href="td-administration-user-rights-profile-management.htm">Profile Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Define users and attach one or more profiles to them in the <a href="td-administration-user-rights-user-management.htm">User Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Assign user rights to the desired profiles in the <a href="td-administration-user-rights-matrix.htm">Profile Matrix</a> screen.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>The table below contains screen actions that are related to user rights:</p>
+                                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Module</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Screen</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="11">
+                                                                        <p>Entity management</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="11">
+                                                                        <p>Entity management</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Screen access</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Move entity</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Access inactive entities</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Access all views</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Add an entity</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Edit an entity</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Deactivate an entity</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Export entities</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Import entities</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Detail of thresholds by entity</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                        <p>Copy entity parameters</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="note" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span><span style="font-size: 1.1em;">This documentation presents you the </span><b style="font-size: 1.1em;">Comment</b><span style="font-size: 1.1em;"> column.</span>
+                                                    <br />
+                                                    <br /><span style="font-size: 1.1em;">For more information on this screen, see the following documentations:</span>
+                                                    <br />
+                                                    <ul>
+                                                        <li>
+                                                            <p><a href="td-administration-entity-management-intro.htm">Entity Management: Introduction</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-administration-entity-management-hierarchy-identification.htm">Entity Management: Hierarchy and Entity Identification Columns</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-administration-entity-management-usage.htm">Entity Management: Usage Column</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-administration-entity-management-active-vision.htm">Entity Management: Active Hierarchies Column</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-administration-entity-management-three-dots.htm">Entity Management: Three Dots Button</a>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p>The <b>Comment</b> column allows you to add, edit, or delete comments for entities. Comments are only visible on this screen and to administrators.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To add, edit, or delete a comment for an entity:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Double-click the <b>Comment</b> cell for the desired entity.</p>
+                                                        <p class="task-result">A pop-up window appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter, edit or delete a comment from the input zone.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>OK</b>, then the <img src="../../Resources/Images/buttons-icons/save-button.png" title="Save button" alt="Save" style="max-width: 10%;vertical-align: middle;" /> button at the top right of the nested grid.</p>
+                                                    </li>
+                                                </ol>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/entity-management-screen-5.png" data-mc-popup-alt="Entity management screen: Comment column"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="1912" data-mc-height="709" src="../../Resources/Images/entity-management-screen-5.png" alt="Entity management screen: Comment column" title="Entity management screen: Comment column" tabindex="" style="max-width: 100%;" /></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu">
+                                            <div data-sticky-container="" id="01DC7cRv2EuQ048eztUVTA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="01DC7cRv2EuQ048eztUVTA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1280px)" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menu_proxy_skin mc-component">
+                                                        <li class="tree-node"><a href="#EntityManagementCommentColumn">Entity Management: Comment Column</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="invisible"><a href="../../general/search-tips.htm" class="MCXref xref">Your search for  returned  result(s).</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

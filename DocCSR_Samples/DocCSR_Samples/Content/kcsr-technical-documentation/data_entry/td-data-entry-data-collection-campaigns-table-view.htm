@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Data Collection Campaigns: Table View</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <!--Need to replace Flare's button element with "<button type="button" class="copy-btn" MadCap:conditions="Default.ScreenOnly">Copy</button>"
+		in each code snippet when creating or after modifying. This is until Flare fix their button to copy without unicode fillers for spaces. Note that it has the condition ScreenOnly so that no button appears in the PDF (JB)-->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/Stylesheets/clipboard.css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.toggle-toc-on-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.toggle-toc-off-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Basic-HTML.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Resources/Scripts/clipboard.js">
+        </script>
+        <script type="text/javascript" defer="defer" src="../../Resources/Scripts/scroll-button.js">
+        </script>
+        <script type="text/javascript" src="../../../Skins/Default/Scripts/Topic-Toolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../general/homepage.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field: Enter your words in double quotation marks and use filter for refined results." placeholder="Enter your words in double quotation marks &quot; &quot; and use filter for refined results." />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All files" title="All files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie toggle-toc-on-button" title="Show left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Show left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie toggle-toc-off-button" title="Hide left menu">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Hide left menu">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie previous-topic-button" title="Previous documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Previous documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Next documentation" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Next documentation">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="topic-layout">
+                                        <div class="topicbody">
+                                            <!--This page was last updated on <MadCap:variable name="General.NewDateTimeVariable" />.-->
+                                            <div role="main" id="mc-main-content">
+                                                <h1 data-mc-conditions="Default.ScreenOnly" id="DataCollectionCampaignsTableView" data-magellan-target="DataCollectionCampaignsTableView"><a name="top"></a>Data Collection Campaigns: Table View<img src="../../Resources/Images/version-icons/icon-csr-insight-2-13.png" title="This documentation is based on version 2.13 of CSR Insight application." alt="CSR Insight version 2.13" style="max-width: 37%;vertical-align: super;" /></h1>
+                                                <p data-mc-conditions="Default.ScreenOnly"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Carbon Footprint|../../kcsr-quick-start/qs-carbon-footprint.htm||Proforma|../../kcsr-quick-start/qs-proforma.htm" target="_blank" style="mc-label: 'Related &quot;Quick Start&quot; documentations';mc-help-control-display: popup;"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related "Quick Start" documentations</span></a>
+                                                </p>
+                                                <div class="search-tip">
+                                                    <p data-mc-autonum="&lt;b&gt;SEARCH TIP &#160;&lt;/b&gt;"><span class="autonumber"><span><b>SEARCH TIP &#160;</b></span></span>Press <b>CTRL + F</b> (Windows and Linux) or <b>CMD + F</b> (Mac) to search within this page.</p>
+                                                </div>
+                                                <div class="intro">
+                                                    <p>To access this screen, click: <b>Data entry</b>&#160;&gt;&#160;<b>Data collection campaigns</b>.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" /></a><a name="Security"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Security Notes</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Some actions, such as screen access, are permitted only for authorized users, that is, users with the appropriate profile. In other words, if the user does not have the right profile, the user cannot perform the action.</p>
+                                                        <p>To configure this security (also called user rights), complete the following steps:</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Define the profiles in the <a href="../administration/td-administration-user-rights-profile-management.htm">Profile Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Define users and attach one or more profiles to them in the <a href="../administration/td-administration-user-rights-user-management.htm">User Management</a> screen.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Assign user rights to the desired profiles in the <a href="../administration/td-administration-user-rights-matrix.htm">Profile Matrix</a> screen.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>The table below contains screen actions that are related to user rights:</p>
+                                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3" data-mc-conditions="Default.ScreenOnly">
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <col class="TableStyle-Basic-HTML-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Module</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Screen</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Action</th>
+                                                                    <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Step</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="31">
+                                                                        <p>Reporting</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="31">
+                                                                        <p>Data collection campaigns</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Screen access</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Enter data, comments, and attachments</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Promote workflow</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Close workflow</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Unpromote workflow</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Ask a question</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1" rowspan="4">
+                                                                        <p>Answer a question</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Not started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Started</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Validated locally</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                        <p>Closed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>See campaigns not started</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Import data</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Import data with profile restrictions*</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Import data on historical campaigns**</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                        <p>Notify for validation</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                                    <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                        <p>Notify for closure</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1" style="text-align: center;">
+                                                                        <p>--</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>*Enables you to import data on collect points marked as <b>Data to be imported by administrator</b> on the <a href="../administration/td-administration-campaign-settings-entities.htm"><a href="../administration/td-administration-campaign-settings-entities.htm">Campaign Settings: Entities to Deploy for an Indicator</a></a> screen.</p>
+                                                        <p>**Enables you to import historical campaigns data. For more information on historical campaigns, see <a href="../administration/td-administration-campaign-settings.htm">Campaign Settings</a>.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="note" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span><span style="font-size: 1.1em;">This documentation presents you the </span><b style="font-size: 1.1em;">Table view</b><span style="font-size: 1.1em;"> and its different features.</span>
+                                                    <br />
+                                                    <br /><span style="font-size: 1.1em;">For more information on this screen, see the following documentations:</span>
+                                                    <br />
+                                                    <ul>
+                                                        <li>
+                                                            <p><a href="td-data-entry-data-collection-campaigns-intro.htm">Data Collection Campaigns: Introduction</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-data-entry-data-collection-campaigns-survey-view.htm">Data Collection Campaigns: Survey View</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="td-data-entry-data-collection-campaigns-table-survey-view.htm">Data Collection Campaigns: Table and Survey Views</a>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p>To access the <b>Table view</b>, click the switch button: <img src="../../Resources/Images/table-view-switch-reporting-campaign.png" style="vertical-align: middle;max-width: 23%;" title="Table view switch" alt="Table view switch" />.</p>
+                                                <p class="task-result">The table view is displayed:</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/table-view-reporting-campaign.png" data-mc-popup-alt="Table view screen"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="1917" data-mc-height="606" src="../../Resources/Images/table-view-reporting-campaign.png" alt="Table view screen" title="Table view screen" tabindex="" style="max-width: 100%;" /></a>
+                                                </p>
+                                                <p>Indicators are displayed by theme and section. In the example above, the theme is <b>Corporate data</b> and the section is <b>Old Metrics</b>.</p>
+                                                <p class="space">&#160;</p>
+                                                <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>For full year campaigns, the label and content of the "Period - Previous year" column, that is the third column, depend on the <b>N-1 source</b> selected for your campaign on the <a href="../administration/td-administration-campaign-settings.htm">Campaign Set Up</a> screen:<br /><ul><li><b>Published</b>: The indicator value comes from published data.</li><li><b>Proforma version</b>: The indicator value comes from a proforma version.</li></ul></div>
+                                                <h2 id="PointofViewPOV" data-magellan-target="PointofViewPOV">Point of View (POV)</h2>
+                                                <p>The POV contains the following items:</p>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                    <thead>
+                                                        <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                            <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Item</th>
+                                                            <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Show closed campaigns</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>To view data collection campaigns locked by an administrator, select <b>YES</b> from the drop-down menu.</p>
+                                                                <p>These data collection campaigns are read-only. In other words, they are available only for consultation.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Campaign</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Campaign label. Campaigns contain one or several indicators.</p>
+                                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Indicators are divided into chapters, themes, and sections, by nesting. See the documentation on the <a href="../administration/td-administration-indicator-breakdown-chapter-theme.htm">Breakdown by Chapter and Theme</a>.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                <p>Entity</p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                <p>Label of the entity on which the campaign is deployed.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2 id="DisplayColumnsorLines" data-magellan-target="DisplayColumnsorLines">Display Columns or Lines</h2>
+                                                <p>You can choose which columns or lines you want to display or hide.</p>
+                                                <p class="space" style="font-size: 0.2em;">&#160;</p>
+                                                <p>To display or hide columns, select one or several columns in the <b>Show columns</b> drop-down menu.</p>
+                                                <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                    <p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/display-columns-table-view-reporting-campaign-2.png" title="Show columns drop-down menu" alt="Show columns drop-down menu" style="max-width: 20%;" />
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result"><b>Show columns</b> drop-down menu</p>
+                                                </div>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>The client's configuration for column display is automatically saved. Therefore, when I leave the page (by changing the selected campaign in the POV, by refreshing the browser page or Shuttle tab), and then return, the configuration remains unchanged.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To display or hide lines depending on the indicator type, select one or multiple options from the <b>Show lines</b> drop-down menu:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p><b>No data entry</b>: Only indicators for which you have not entered any data, whether entered or calculated</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>Not validated</b>: Only indicators that are neither validated nor closed</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>Not closed</b>: Only unclosed indicators</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>Unavailable</b>: Only indicators with unavailable data</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>Alerts</b>: Only indicators with alerts</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>Extrapolated</b>: Only indicators with extrapolated data</p>
+                                                    </li>
+                                                </ul>
+                                                <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                    <p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/display-lines-reporting-campaign.png" title="Show lines drop-down menu" alt="Show lines drop-down menu" style="max-width: 20%;" />
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result"><b>Show lines</b> drop-down menu</p>
+                                                </div>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>An indicator is displayed if and only if it meets all selected filters.</p>
+                                                <h2 id="ResizeColumns" data-magellan-target="ResizeColumns">Resize Columns</h2>
+                                                <p>Click on the dotted vertical line and drag the column to the right to make it wider or to the left to make it narrower. Columns cannot be reduced to zero.</p>
+                                                <h2 id="EnterData" data-magellan-target="EnterData">Enter Data</h2>
+                                                <p>You can enter the indicator value, as well as additional information.</p>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Entry rights depend on the user profile. See the <a href="#Security">Security Notes</a> above, and the <a href="#Workflow">Workflow Process</a> section below.</p>
+                                                <h3 id="EntertheIndicatorValue" data-magellan-target="EntertheIndicatorValue"><a name="Enter3"></a>Enter the Indicator Value</h3>
+                                                <p>You can enter the indicator value:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Without extrapolation</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>With extrapolation</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>You can also indicate that the indicator value is not available.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To enter the indicator value without extrapolation:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the cell in the campaign current "Period - Year" column for the desired indicator.</p>
+                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/input-data-table-view-reporting-campaign.png" data-mc-popup-alt="Campaign current year"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="1881" data-mc-height="352" src="../../Resources/Images/input-data-table-view-reporting-campaign.png" alt="Campaign current year" title="Campaign current year" tabindex="" style="max-width: 100%;" /></a>
+                                                        </p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter your data.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>If the response type of your indicator is <b>Choice list - simple choice</b> or <b>Choice list - multiple selection</b>, select your data from a drop-down menu.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Save your data, as mentioned in the <a href="#Save">Save and Submit Data for Validation</a> section below.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To enter the indicator extrapolated value:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button.png" title="Three dots button" alt="Three dots" style="max-width: 5%;" /> button at the right of the cell in the campaign current "Period - Year" column for the desired indicator, then <b>Extrapolation</b>.</p>
+                                                        <p class="task-result">The <b>Extrapolate value</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Choose the <b>Extrapolation method</b> among the following methods:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p style="margin: 0.3em;">For yearly campaigns:</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>Previous year</b>: The indicator value is calculated based on the last year value.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>Average of previous years</b>: The indicator value is calculated based on the average of the previous years values.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>Weighting</b>: The indicator value is calculated based on the weight of a reference indicator over a chosen period.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>Estimation</b>: The indicator value is estimated. In other words, the user does not have a real value for an indicator, but can estimate this value.</p>
+                                                                    </li>
+                                                                </ul>
+                                                                <p class="space" style="font-size: 0.2em;">&#160;</p>
+                                                            </li>
+                                                            <li>
+                                                                <p style="margin:0.3em;">For non-yearly campaigns:</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>Same period of last year</b>: The indicator value is calculated based on the last year value at the same period</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>Previous period</b>: The indicator value is calculated based on the last period value.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>Average of previous periods</b>: The indicator value is calculated based on the average of the previous period values.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>The weight of a reference indicator over a period of your choice</b>: The indicator value is calculated based on the weight of a reference indicator over a chosen period.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="margin: 0.3em;"><b>Estimation</b>: The indicator value is estimated. In other words, the user does not have a real value for an indicator, but can estimate this value.</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Select a <b>Unit</b>.</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>If the unit selected is not the default unit, the extrapolated value will be automatically converted into the default unit.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>If you chose <b>Estimation</b> as your extrapolation method, enter an <b>Extrapolated value</b>.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Click <b>OK</b>.</p>
+                                                        <p class="task-result">Extrapolated data is marked with a green line at the top of the cell.</p>
+                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/extrapolation-table-view-reporting-campaign.png" data-mc-popup-alt="Input the indicator extrapolated value"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="2076" data-mc-height="561" src="../../Resources/Images/extrapolation-table-view-reporting-campaign.png" alt="Input the indicator extrapolated value" title="Input the indicator extrapolated value" tabindex="" style="max-width: 100%;" /></a>
+                                                        </p>
+                                                    </li>
+                                                    <li value="6">
+                                                        <p>Save your data, as mentioned in the <a href="#Save">Save and Submit Data for Validation</a> section below.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To follow up your extrapolated data, go to the <b>Extrapolated Data Follow-Up</b> screen.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To indicate that the indicator value is not available: </p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button.png" title="Three dots button" alt="Three dots" style="max-width: 5%;" /> button at the right of the cell in the campaign current "Period - Year" column for the desired indicator.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>Unavailable</b>.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/unavailable-value-reporting-campaign.png" style="max-width: 40%;" title="Three dots drop-down menu: Unavailable button" alt="Three dots drop-down menu: Unavailable button" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Three dots</b> drop-down menu</p>
+                                                        </div>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Add a comment, as mentioned in the <a href="#Enter">Enter Comments</a> section below.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Save your data, as mentioned in the <a href="#Save">Save and Submit Data for Validation</a> section below.</p>
+                                                        <p class="task-result"><b>Not Available</b> is displayed in the cell.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To cancel this manipulation:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button.png" style="max-width: 5%;" title="Three dots button" alt="Three dots" /> button, then <i style="font-weight: bold; font-style: normal;">Available</i>.</p>
+                                                        <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                            <p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/available-value-reporting-campaign.png" style="max-width: 40%;" title="Three dots drop-down menu: Available button" alt="Three dots drop-down menu: Available button" />
+                                                                </p>
+                                                            </p>
+                                                            <p class="task-result"><b>Three dots</b> drop-down menu</p>
+                                                        </div>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Add a comment, as mentioned in the <a href="#Enter">Enter Comments</a> section below.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Save your data, as mentioned in the <a href="#Save">Save and Submit Data for Validation</a> section below.</p>
+                                                        <p class="task-result"><b>Not Available</b> does not appear in the cell anymore.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="EnterCarbonFootprintInformation" data-magellan-target="EnterCarbonFootprintInformation"><a name="Enter2"></a><a name="aanchor47"></a>
+                                                    <MadCap:concept term="Carbon footprint" />Enter Carbon Footprint Information</h3>
+                                                <p>Before <a href="#Procedur">following the procedures</a> that will allow you to enter the carbon footprint information, read the <a href="#Prerequi">prerequisites</a> below.</p>
+                                                <h4><a name="Prerequi"></a>Prerequisites</h4>
+                                                <p>To enter carbon footprint information for an indicator, you need to enable the display and the entry of carbon footprint information beforehand.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To display carbon footprint information in the table view for an indicator, bind this indicator to an emission factor on the <a href="../administration/td-administration-carbon-footprint-emission-factors-activity-indicators.htm">Association of Emission Factors with Activity Indicators</a> screen.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To enable the entry of carbon footprint information for an indicator, see the documentation on the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a>.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>If the selection of the <b>Financial control</b> and the <b>Operational control</b> is enabled for an indicator on the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a> screen, you must select one of the options available in each drop-down menu. If not, you cannot validate the indicator.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To set up the options for the <b>Financial control</b> and the <b>Operational control</b> drop-down menus:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Create an emission factor category on the <a href="../administration/td-administration-carbon-footprint-emission-factors-categories.htm">Management of Emission Factor Categories</a> screen.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Create an emission factor and bind it to the emission factor category, on the <a href="../administration/td-administration-carbon-footprint-emission-factors-lists.htm">Emission Factors List</a> screen.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Bind the emission factor to the indicator for which you want to edit the financial and the operational control, on the <a href="../administration/td-administration-carbon-footprint-emission-factors-activity-indicators.htm">Association of Emission Factors with Activity Indicators</a> screen.</p>
+                                                    </li>
+                                                </ol>
+                                                <h4><a name="Procedur"></a>Procedures to Follow</h4>
+                                                <p>In the table view, you can enter carbon footprint information:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>The value for the activity indicator</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To enter this value, see the <a href="#Enter3">Enter the Indicator Value</a> section above.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The <b>Uncertainty</b></p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The <b>Amortization period</b></p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The <b>Financial control</b></p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The <b>Operational control</b></p>
+                                                    </li>
+                                                </ul>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>Moreover, you can attach a valuation table to the indicator. See the <a href="#View">View Additional Information</a> section below.</p>
+                                                <p class="space">&#160;</p>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>For more information on these concepts, see the <a href="../../kcsr-quick-start/qs-carbon-footprint.htm">Carbon Footprint</a> documentation.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To enter the <b>Uncertainty</b>:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/three-dots-button.png" style="max-width: 5%;" title="Three dots button" alt="Three dots" /> button at the right of the cell in the campaign current "Period - Year" column for the desired indicator, then <b>Uncertainty</b>.</p>
+                                                        <p class="task-result">The <b>Edit the uncertainty</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/edit-button.png" title="Edit button" alt="Edit" style="max-width: 5%;vertical-align: text-bottom;" /> button.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Drag your cursor across the bar to the desired percentage.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click <b>Submit</b>.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p><b>Save</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>You can also click the <img src="../../Resources/Images/buttons-icons/edit-button.png" title="Edit button" alt="Edit" style="max-width: 5%;vertical-align: text-bottom;" /> button at the end of the <b>Uncertainty</b> line from the additional information zone.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To enter the <b>Amortization period</b>:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/arrow-button.png" title="Arrow button" alt="Arrow" style="max-width: 5%;" /> button in the <b>Actions</b> column.</p>
+                                                        <p class="task-result">The additional information zone appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/edit-button.png" title="Edit button" alt="Edit" style="max-width: 5%;vertical-align: text-bottom;" /> button at the end of the <b>Amortization period</b> line.</p>
+                                                        <p class="task-result">The <b>Edit the amortization period</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Enter the number of years desired.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click <b>Submit</b>.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p><b>Save</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To enter the <b>Partner</b>:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/arrow-button.png" title="Arrow button" alt="Arrow" style="max-width: 5%;"></img> button in the <b>Actions</b> column.</p>
+                                                        <p class="task-result">The additional information zone appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select one of the options available in the drop-down menu at the end of the <b>Partner</b> line.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p><b>Save</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To enter the <b>Financial control</b>:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/arrow-button.png" title="Arrow button" alt="Arrow" style="max-width: 5%;" /> button in the <b>Actions</b> column.</p>
+                                                        <p class="task-result">The additional information zone appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select one of the options available in the drop-down menu at the end of the <b>Financial control</b> line.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p><b>Save</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To enter the <b>Operational control</b>:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/arrow-button.png" title="Arrow button" alt="Arrow" style="max-width: 5%;" /> button in the <b>Actions</b> column.</p>
+                                                        <p class="task-result">The additional information zone appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select one of the options available in the drop-down menu at the end of the <b>Operational control</b> line.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p><b>Save</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>When the default uncertainty percentage, amortization period, partner, financial control, or operational control is defined for an indicator through the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a>, <a href="../administration/td-administration-carbon-footprint-data-control-modes.htm">Management of Default Control Modes</a>, or the <a href="../administration/td-administration-carbon-footprint-uncertainty.htm">Details of Uncertainty</a> screen, the labels displayed in the additional information zone are:<br /><br /><ul><li><b>Default uncertainty</b></li><li><b>Default amortization period</b></li><li><b>Default partner</b></li><li><b>Default financial control</b></li><li><b>Default operational control</b></li></ul><br />When you define a new uncertainty percentage, amortization period, partner, financial control, or operational control on this screen, the labels change:<br /><br /><ul><li><b>Uncertainty</b></li><li><b>Amortization period</b></li><li style="font-weight: bold;">Partner</li><li><b>Financial control</b></li><li><b>Operational control</b></li></ul></div>
+                                                <h3 id="EnterComments" data-magellan-target="EnterComments"><a name="Enter"></a>Enter Comments</h3>
+                                                <div class="note" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>
+                                                    <p>Comments are mandatory:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>For unavailable data</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>When rejecting validation for an indicator</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>In some cases, when the indicator value entered does not respect the threshold or consistency check set up</p>
+                                                            <p>See the documentation on the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a>.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="space">&#160;</p>
+                                                <p>To enter a comment:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the cell in the <b>Comments</b> column for the desired indicator.</p>
+                                                        <p class="task-result">The <b>Input comments</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter a comment.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>OK</b>.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="AddAttachments" data-magellan-target="AddAttachments">Add Attachments</h3>
+                                                <div class="note" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>
+                                                    <p>The limitations regarding attachments are as follows:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>You can attach to an indicator up to 10 documents.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Authorized file types are: Excel, PowerPoint, Word, image (png, jpeg, and so on).</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Authorized file size is set from the server.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="space">&#160;</p>
+                                                <p>To attach one or more documents to an indicator:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/attachment-button.png" style="max-width: 4%;vertical-align: middle;" title="Attachment button" alt="Attachment" /> button.</p>
+                                                        <p class="task-result">The <b>Import multiple documents</b> pop-up window appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Drag and drop or click to upload one or multiple files.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>OK</b>.</p>
+                                                        <p class="task-result">Your document is uploaded. The button changes to <img src="../../Resources/Images/buttons-icons/attachment-button-2.png" style="width: auto;height: auto;max-width: 4%;vertical-align: middle;" title="Attachment with green dot button" alt="Attachment with green dot button" />. You can then click this button to view, replace or delete uploaded documents as desired.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To delete a document, click the <img src="../../Resources/Images/buttons-icons/delete-button.png" title="Delete button" alt="Delete" style="vertical-align: middle;max-width: 3%;" /> button next to the file name.</p>
+                                                <h2 id="SaveandSubmitDataforValidation" data-magellan-target="SaveandSubmitDataforValidation"><a name="Save"></a>Save and Submit Data for Validation</h2>
+                                                <p>To save and submit the data you enter, click the <img src="../../Resources/Images/buttons-icons/save-button.png" style="max-width: 10%;vertical-align: middle;" title="Save button" alt="Save" /> button at the top right of the table to save the data to the server.</p>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>By default, the button is gray. The button turns green when new data entry is made and needs to be saved.</p>
+                                                <h2 id="ValidateData" data-magellan-target="ValidateData"><a name="Validate"></a>Validate Data</h2>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Validation rights depend on the user profile. See the <a href="#Security">Security Notes</a> above, and the <a href="#Workflow">Workflow Process</a> section below.</p>
+                                                <p>To validate data for an indicator, click the <img src="../../Resources/Images/buttons-icons/validate-button.png" style="max-width: 5%;vertical-align: text-bottom;" title="Validate button" alt="Validate" /> button at the right of the indicator line.</p>
+                                                <p class="task-result">The indicator is validated.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To validate data for all the indicators at once:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click <b>Validate all</b> from the <b>Workflow</b> drop-down menu at the top right of the table.</p>
+                                                        <p class="task-result">The <b>Validate all</b> pop-up window appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Click <b>Validate all</b>.</p>
+                                                        <p class="task-result">All indicators are validated.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To validate data for selected indicators:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click <b>Validate a selection</b> from the <b>Workflow</b> drop-down menu at the top right of the table.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select the <img src="../../Resources/Images/buttons-icons/check-button-3.png" title="Check box" alt="Check" style="max-width: 5%;vertical-align: top;" /> box of one or multiple indicators you want to validate.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/validatio-selection-button.png" title="Validate a selection button" alt="Validate a selection" style="vertical-align: top;max-width: 28%;" /> button that appears at the bottom of the table.</p>
+                                                        <p class="task-result">Selected indicators are validated.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                    <p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/workflow-drop-down-menu.png" title="Workflow drop-down menu" alt="Workflow drop-down menu" style="max-width: 30%;" />
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result"><b>Workflow</b> drop-down menu</p>
+                                                </div>
+                                                <p class="space">&#160;</p>
+                                                <p><a name="To"></a>To close an indicator, click the <img src="../../Resources/Images/buttons-icons/validate-button.png" style="max-width: 5%;vertical-align: text-bottom;" title="Close button" alt="Close" /> button next to the <img src="../../Resources/Images/buttons-icons/reject-button-2.png" title="Reject button" alt="Reject" style="max-width: 5%;vertical-align: text-bottom;" /> button at the right of the indicator line.</p>
+                                                <p class="space">&#160;</p>
+                                                <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>If activated on the <a href="../administration/td-administration-campaign-email-settings.htm">Mail Settings</a> screen, authorized users receive a notification email when one or multiple indicators have been validated or closed. See the <a href="#Security">Security Notes</a> above.<br /><br />No notification will be sent if the validated or closed indicators do not have a value entered or calculated.</p>
+                                                <h2 id="RejectDataValidation" data-magellan-target="RejectDataValidation"><a name="Reject"></a>Reject Data Validation</h2>
+                                                <p>If you do not want to validate the indicator, you can reject validation.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To reject validation for an indicator:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/reject-button-2.png" title="Reject button" alt="Reject" style="max-width: 5%;vertical-align: text-bottom;" /> button at the end of the desired indicator line.</p>
+                                                        <p class="task-result">The <b>Unvalidate</b> pop-up panel appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter the reason for your refusal.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>OK</b>.</p>
+                                                        <p class="task-result">Validation is rejected. Your reason for refusal appears in the <b>Comments</b> column.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To reject validation for all indicators at once:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click <b>Invalidate all</b> from the <b>Workflow</b> drop-down menu at the top right of the table.</p>
+                                                        <p class="task-result">The <b>Invalidate all</b> pop-up window appears.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter the reason for your refusal.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <b>Invalidate all</b>.</p>
+                                                        <p class="task-result">Validation is rejected for all indicators. Your reason for refusal appears in the <b>Comments</b> column.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <p>To reject validation for selected indicators:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Click <b>Invalidate a selection</b> from the <b>Workflow</b> drop-down menu at the top right of the table.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Enter the reason for your refusal.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Check the <img src="../../Resources/Images/buttons-icons/check-button-3.png" title="Check box" alt="Check" style="max-width: 5%;vertical-align: top;" /> box of one or multiple indicators you want to validate.</p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click the <img src="../../Resources/Images/buttons-icons/invalidate-selection-button.png" title="Invalidate a selection button" alt="Invalidate a selection" style="vertical-align: top;max-width: 28%;" /> button that appears at the bottom of the table.</p>
+                                                        <p class="task-result">The <b>Invalidate all</b> pop-up window appears.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>Click <b>Invalidate all</b>.</p>
+                                                        <p class="task-result">Validation is rejected for selected indicators. Your reason for refusal appears in the <b>Comments</b> column.</p>
+                                                    </li>
+                                                </ol>
+                                                <p class="space">&#160;</p>
+                                                <div class="caption" data-mc-conditions="Default.ScreenOnly">
+                                                    <p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/workflow-drop-down-menu.png" title="Workflow drop-down menu" alt="Workflow drop-down menu" style="max-width: 30%;" />
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result"><b>Workflow</b> drop-down menu</p>
+                                                </div>
+                                                <h2 id="ViewAdditionalInformation" data-magellan-target="ViewAdditionalInformation"><a name="View"></a>View Additional Information</h2>
+                                                <p>You can view addition information for:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="#For">Quantitative indicators</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#For2">Qualitative indicators</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <h3 id="ForQuantitativeIndicators" data-magellan-target="ForQuantitativeIndicators"><a name="For"></a>For Quantitative Indicators</h3>
+                                                <p>To view or hide the additional information for quantitative indicators, click the <img src="../../Resources/Images/buttons-icons/arrow-button.png" title="Arrow button" alt="Arrow" style="max-width: 5%;vertical-align: text-bottom;" /> button in the <b>Actions</b> column.</p>
+                                                <p class="space" style="font-size: 0.3em;">&#160;</p>
+                                                <p>The additional information include:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>The input unit</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The valuation table</p>
+                                                        <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>The valuation table contains a coefficient that allows you to modify the indicator weight.<br /><br />To view this information, you need to select a valuation table for the indicator. See the documentation on the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a> and on <a href="../administration/td-administration-indicator-valuation-tables.htm">Management of Valuation Tables</a>.</div>
+                                                    </li>
+                                                    <li>
+                                                        <p>The indicator description</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To enter, edit, or delete the indicator description, go to the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a> screen.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The chart on the indicator value evolution over time</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Hover over the blue columns to view the indicator value.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The chart on the action evolution over time</p>
+                                                        <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>This chart appears only for indicators bound to an action.<br /><br />Collected data on the indicator linked to the action is represented by the blue columns. The trajectory of the action, which includes all the targets set for the action, is represented by the orange line.<br /><br />By hovering over the blue columns, you can view the details about the achievement of the target.</div>
+                                                    </li>
+                                                    <li>
+                                                        <p>The carbon footprint information</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To enter, edit, or delete the carbon footprint information, see the <a href="#Enter2">Enter Carbon Footprint Information</a> section above.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/indicator-description-survey-view-reporting-campaign-2.png" data-mc-popup-alt="Addition information for a quantitative indicator"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="1258" data-mc-height="534" src="../../Resources/Images/indicator-description-survey-view-reporting-campaign-2.png" alt="Addition information for a quantitative indicator" title="Addition information for a quantitative indicator" tabindex="" style="max-width: 100%;" /></a>
+                                                </p>
+                                                <h3 id="ForQualitativeIndicators" data-magellan-target="ForQualitativeIndicators"><a name="For2"></a>For Qualitative Indicators</h3>
+                                                <p>For qualitative indicators, you can view two types of additional information:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>The indicator data entered in the previous period and year</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The indicator description</p>
+                                                        <p class="noteAlt" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To enter, edit, or delete the indicator description, go to the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a> screen.</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="space">&#160;</p>
+                                                <p>To view or hide the previous indicator data, click the <img src="../../Resources/Images/buttons-icons/arrow-button.png" title="Arrow button" alt="Arrow" style="max-width: 5%;vertical-align: text-bottom;" /> button in the <b>Actions</b> column.</p>
+                                                <p class="space">&#160;</p>
+                                                <p>To view the indicator description, go to the indicator identity card. To access the indicator identity card, see the <b>View the Identity Card</b> section in the <a href="td-data-entry-data-collection-campaigns-table-survey-view.htm">Data Collection Campaigns: Table and Survey Views</a> documentation.</p>
+                                                <h2 id="Alerts" data-magellan-target="Alerts"><a name="Alerts"></a>Alerts</h2>
+                                                <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Alerts can only be attached to indicators included in nonhistorical campaigns. <br /><br />For more information on historical and nonhistorical campaigns, see the <a href="#Color">Color Coding for the Indicator Value Cell</a> section below.<br /></div>
+                                                <p>You can view alerts if:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>The indicator value entered does not respect the threshold or the consistency check set up.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The entry deadline has passed.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>And so on.</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="space">&#160;</p>
+                                                <p>When an alert is triggered:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>The indicator value cell turns red.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>An alert icon appears, as well as a warning message, when you hover over it.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Depending on the alert type, the comment cell, the carbon footprint information cells, and/or the <img src="../../Resources/Images/buttons-icons/attachment-button.png" style="max-width: 4%;vertical-align: middle;" title="Attachment button" alt="Attachment" /> button turn red.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/alert-table-view-reporting-campaign.png" data-mc-popup-alt="Alert triggered for an indicator"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="1816" data-mc-height="151" src="../../Resources/Images/alert-table-view-reporting-campaign.png" alt="Alert triggered for an indicator" title="Alert triggered for an indicator" tabindex="" style="max-width: 100%;" /></a>
+                                                </p>
+                                                <h2 id="ColorCodingfortheIndicatorValueCell" data-magellan-target="ColorCodingfortheIndicatorValueCell"><a name="Color"></a>Color Coding for the Indicator Value Cell</h2>
+                                                <p>The indicator value cell changes color, as below:</p>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic-HTML.css');" class="TableStyle-Basic-HTML" cellspacing="3">
+                                                    <thead>
+                                                        <tr class="TableStyle-Basic-HTML-Head-Header1">
+                                                            <th class="TableStyle-Basic-HTML-HeadE-Column1-Header1">Color</th>
+                                                            <th class="TableStyle-Basic-HTML-HeadD-Column1-Header1">Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Yellow</p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/yellow-cell-table-view-reporting-campaign.png" style="max-width: 100%;" title="Yellow cell" alt="Yellow cell" />
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Data is not saved yet. You have to save it in order to record it in the application.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>White</p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/white-cell-table-view-reporting-campaign.png" style="max-width: 100%;" title="White cell" alt="White cell" />
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>If the cell is empty, the cell is editable. If the cell is filled in, the data is saved on the server.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>Gray</p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/gray-cell-table-view-reporting-campaign.png" style="max-width: 100%;" title="Gray cell" alt="Gray cell" />
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>A gray cell is a read-only cell. This is the case, if:</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>The indicator is calculated</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>The indicator is validated or closed</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>The campaign is locked by the administrator</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>The campaign is historical</p>
+                                                                        <div class="note-table" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>The <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application supports two types of campaigns:<br /><br /><ul><li>Historical campaigns: Proforma data collected by import through the <a href="../administration/td-administration-data-import.htm">Data Import</a> screen</li><li>Nonhistorical campaigns: Data collected by manual entry through the <a href="td-data-entry-data-collection-campaigns-intro.htm">Data Collection Campaigns</a> screen</li></ul><br /></div>
+                                                                        <div class="note" style="font-size: 1.1em;" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>The <span class="mc-variable dockcsr.ProductName variable">CSR Insight</span> application supports two types of campaigns:<br /><br /><ul><li>Historical campaigns: Proforma data collected by import through the <a href="../administration/td-administration-data-import.htm">Data Import</a> screen</li><li>Nonhistorical campaigns: Data collected by manual entry through the <a href="td-data-entry-data-collection-campaigns-intro.htm">Data Collection Campaigns</a> screen</li></ul><br />To create campaigns, see <a href="../administration/td-administration-campaign-settings.htm">Campaign Set Up</a> or <a href="../administration/td-administration-data-recovery.htm">Data Recovery</a>.</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyE-Column1-Body1">
+                                                                <p>White with green line</p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/white-green-line-cell-table-view-reporting-campaign.png" style="max-width: 100%;" title="White with green line cell" alt="White with green line cell" />
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyD-Column1-Body1">
+                                                                <p>Extrapolated data.</p>
+                                                                <p class="note-table" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>To follow up your extrapolated data, go to the <b>Extrapolated Data Follow-Up</b> screen.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Basic-HTML-Body-Body1">
+                                                            <td class="TableStyle-Basic-HTML-BodyB-Column1-Body1">
+                                                                <p>Red</p>
+                                                                <p>
+                                                                    <img src="../../Resources/Images/red-cell-table-view-reporting-campaign.png" style="max-width: 100%;" title="Red cell" alt="Red cell" />
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-Basic-HTML-BodyA-Column1-Body1">
+                                                                <p>A threshold or a consistency check alert is triggered.</p>
+                                                                <p class="note-table" data-mc-autonum="&lt;b&gt;NOTE &lt;/b&gt;"><span class="autonumber"><span><b>NOTE </b></span></span>Alerts depend on the threshold and consistency checks set up which are specific to each indicator. They are determined by the administrators.<br /><br />See the documentation on the <a href="../administration/td-administration-indicator-management-intro.htm">Indicator Management</a>.<br /></p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2 id="WorkflowProcess" data-magellan-target="WorkflowProcess"><a name="Workflow"></a>Workflow Process</h2>
+                                                <p>From the campaign opening to the campaign locking, several actions are made by the authorized users:</p>
+                                                <div class="caption">
+                                                    <p>
+                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/workflow-progress-bar-reporting-campaign.png" data-mc-popup-alt="Workflow"><img class="MCPopupThumbnail img imgLarge-Image-Web" data-mc-width="1462" data-mc-height="661" src="../../Resources/Images/workflow-progress-bar-reporting-campaign.png" alt="Workflow" title="Workflow" tabindex="" style="max-width: 100%;" /></a>
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result">Workflow actions: Profiles and user rights are not frozen. See the <a href="#Security">Security Notes</a> above.</p>
+                                                </div>
+                                                <p class="space">&#160;</p>
+                                                <p>For each workflow step, the progress bar depends on the user profile:</p>
+                                                <div class="caption">
+                                                    <p>
+                                                        <p>
+                                                            <img src="../../Resources/Images/workflow-progress-bar-reporting-campaign-2.png" title="Progress bar changes" alt="Progress bar changes" />
+                                                        </p>
+                                                    </p>
+                                                    <p class="task-result">Workflow progress bar: Profiles and user rights are not frozen. See the <a href="#Security">Security Notes</a> above.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu">
+                                            <div data-sticky-container="" id="iNYcR9p7BE-B6UFBwZ0G8Q">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="iNYcR9p7BE-B6UFBwZ0G8Q:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1280px)" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menu_proxy_skin mc-component">
+                                                        <li class="tree-node"><a href="#DataCollectionCampaignsTableView">Data Collection Campaigns: Table View</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#PointofViewPOV">Point of View (POV)</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#DisplayColumnsorLines">Display Columns or Lines</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ResizeColumns">Resize Columns</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#EnterData">Enter Data</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#EntertheIndicatorValue">Enter the Indicator Value</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#EnterCarbonFootprintInformation">Enter Carbon Footprint Information</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#EnterComments">Enter Comments</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#AddAttachments">Add Attachments</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#SaveandSubmitDataforValidation">Save and Submit Data for Validation</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ValidateData">Validate Data</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#RejectDataValidation">Reject Data Validation</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ViewAdditionalInformation">View Additional Information</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#ForQuantitativeIndicators">For Quantitative Indicators</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#ForQualitativeIndicators">For Qualitative Indicators</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Alerts">Alerts</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ColorCodingfortheIndicatorValueCell">Color Coding for the Indicator Value Cell</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#WorkflowProcess">Workflow Process</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="invisible"><a href="../../general/search-tips.htm" class="MCXref xref">Your search for  returned  result(s).</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
