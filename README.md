@@ -13,8 +13,11 @@ This portfolio is classified by job, then by type of documentation. To navigate,
 - Output type: Dynamic HTML5 output including the homepage and several documentation pages
 
 **Access to the documentation samples:**
-1. Click the "*DocCSR_Samples*" folder in the repository, then the file "*index.htm*".
-2. To access the desired documentation samples in the CSR Insight Documentation Portal from the left menu, read the below section.
+1. Click the *DocCSR_Samples.zip* file in the repository.
+2. Click the ![Download raw file](eleonore-menga-norrito.github.io/Assets/Images/download-raw-file.png "Download raw file") button to download the zip folder.
+3. Extract the zip folder.
+4. Click the *index.htm* file to display the CSR Insight Documentation Portal.
+5. To access the desired documentation samples from the left menu, read the below section.
 
 **Documentation samples:**
 - Homepage
