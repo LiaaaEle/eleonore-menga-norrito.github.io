@@ -101,7 +101,7 @@ To resolve this issue, I created a "Quick Start" menu containing business docume
 Some users identified readability issues.
 
 To resolve this issues, I changed the font type, improved spacing between paragraphs, and divided heavy documents into several ones (for example, for the "Generation of Regulatory Reports", there are 4 documentations).
-## Apprentice Technical Writer at Sage
+## Technical Writer Apprentice at Sage
 - Member of an Internatinonal Documentation and Translation Team
 - Main responsabilities: Writing functional documentations for the online help
 ### Online Help
