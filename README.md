@@ -14,7 +14,7 @@ This portfolio is classified by job, then by type of documentation. To navigate,
 
 **Access to the documentation samples:**
 1. Click the *DocCSR_Samples.zip* file in the repository.
-2. Click the ![Download raw file](Assets/Images/download-raw-file.png "Download raw file") button to download the zip folder.
+2. Click the ![Download raw file](download-raw-file-button.png "Download raw file") button to download the zip folder.
 3. Extract the zip folder.
 4. Click the *index.htm* file to display the CSR Insight Documentation Portal.
 5. To access the desired documentation samples from the left menu, read the below section.
