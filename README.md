@@ -13,7 +13,7 @@ This portfolio is classified by job, then by type of documentation. To navigate,
 - Output type: Dynamic HTML5 output including the homepage and several documentation pages
 
 **Access to the documentation samples:**
-1. Click the "*DocCSR_Samples*" in the repository, then the file "*index.htm*".
+1. Click the "*DocCSR_Samples*" folder in the repository, then the file "*index.htm*".
 2. To access the desired documentation samples in the CSR Insight Documentation Portal from the left menu, read the below section.
 
 **Documentation samples:**
