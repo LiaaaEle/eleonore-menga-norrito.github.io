@@ -67,7 +67,7 @@ Based on feedback gathered from my users (colleagues, customers, and partners) d
 
 Issues I had to deal with in order to meet these requirements:
 - Technical writing is an unfamiliar field for my colleagues.
-- The pace of software feature production (design, development, publication) is extremely fast compared to the pace of documentation production
+- The pace of software feature production (design, development, publication) is extremely fast compared to the pace of documentation production.
 - The large number and complexity of screens to be documented
 - The lack of availability of my colleagues
 
