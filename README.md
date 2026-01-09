@@ -1,5 +1,5 @@
 # Technical Writing Portfolio
-This portfolio is classified by job, then by type of documentation. To navigate, click the ![Bulleted list](bulleted-list-button.png "Bulleted list") button at the top right of this file.
+This portfolio is classified by job, then by type of documentation. To navigate, click the ![Outline](bulleted-list-button.png "Bulleted list") button at the top right of this file.
 
 ## Lead Technical Writer at kShuttle
 - Sole Technical Writer
