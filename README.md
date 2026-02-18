@@ -40,9 +40,8 @@ This portfolio is classified by job, then by type of documentation. To navigate,
   - Management of Emission Factor Categories (access path: *Screen Documentation > Administration > Carbon Footprint Management - Emission Factors*)
 - Transversal documentation: Calculation Functions (access path: *Appendices > Calculation Functions*)
 - Release Notes (access path: *Release Notes*):
-  - New Features
-  - Bugs and Improvements
-  - Backward Compatibility
+  - New Features and Improvements
+  - Next Specs
 
 Below, you can read information on some challenges I faced when working at kShuttle.
 
